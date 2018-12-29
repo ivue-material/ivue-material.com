@@ -4,7 +4,7 @@
             <div class="app-header">
                   <div class="app-header-wrapper">
                         <div class="app-header-img">
-                              <img src="https://cn.vuejs.org/images/logo.png">
+                              <img src="./assets/logo.png">
                               <p class="text">IVue</p>
                         </div>
                   </div>
@@ -53,20 +53,31 @@ export default {
                         {
                               name: '安装',
                               route: '/install',
-                              child: [
-                              ]
+                              child: []
+                        },
+                        {
+                              name: '开始使用',
+                              route: '/start-use',
+                              child: []
+                        },
+                        {
+                              name: '色彩',
+                              route: '/color',
+                              child: []
+                        },
+                         {
+                              name: '组件',
+                              route: '/component',
+                              child: []
                         }
                   ]
             }
-      },
-      components: {
       }
 }
 </script>
 
 <style lang="scss">
 #app {
-      font-family: "Avenir", Helvetica, Arial, sans-serif;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       text-align: center;
@@ -74,8 +85,71 @@ export default {
       height: 500px;
       display: flex;
       flex-direction: column;
-      color: #000;
       background-color: #f5f5f5;
+      font-size: 14px;
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+            margin: 12px 0;
+            display: inline-block;
+            color: #2c3e50;
+      }
+
+      h1 {
+            display: block;
+      }
+
+      .hljs {
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #f3f5f6;
+      }
+
+      .hljs-variable,
+      .hljs-template-variable,
+      .hljs-tag,
+      .hljs-name,
+      .hljs-selector-id,
+      .hljs-selector-class,
+      .hljs-regexp,
+      .hljs-deletion {
+            color: #fa3d58;
+      }
+
+      .hljs-string,
+      .hljs-symbol,
+      .hljs-bullet,
+      .hljs-addition {
+            color: #2aab51;
+      }
+
+      .hljs-comment,
+      .hljs-quote {
+            color: #abb8c6;
+      }
+
+      .hljs-attr {
+            color: #e77600;
+      }
+
+      .hljs-keyword + .hljs-comment {
+            color: black;
+      }
+
+      iframe {
+            border-radius: 5px;
+            background: url("./assets/loading.gif") no-repeat;
+            background-size: cover;
+            background-position: center;
+      }
+
+      .router-link-active {
+            color: #2d8cf0;
+      }
 }
 
 .app {
@@ -116,7 +190,7 @@ export default {
             zoom: 1;
             display: block;
             z-index: 50;
-                  background-color: #fff;
+            background-color: #fff;
             /*左*/
             &-left {
                   position: relative;
@@ -135,9 +209,10 @@ export default {
                               flex: 1;
                               margin-bottom: 8px;
                               text-align: left;
-                              font-size: 18px;
-                              font-weight: 600;
+                              font-size: 16px;
+                              font-weight: 500;
                               color: #7f8c8d;
+                              height: 40px;
                               ul {
                                     padding-left: 13px;
                               }
@@ -153,11 +228,14 @@ export default {
             &-right {
                   position: relative;
                   text-align: left;
-                  padding: 20px;
+                  padding: 20px 20px 100px 20px;
                   float: left;
                   flex: 0 0 auto;
                   display: block;
                   width: 83.33333333%;
+                  p {
+                        margin: 5px;
+                  }
             }
       }
 }

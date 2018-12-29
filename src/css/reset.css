@@ -21,7 +21,12 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
+	font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,\\5FAE\8F6F\96C5\9ED1,Arial,sans-serif;
 	vertical-align: baseline;
+}
+
+a{
+	color: #4177F6;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
