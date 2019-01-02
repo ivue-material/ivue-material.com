@@ -24,7 +24,7 @@
 import ColorMd from '../markdown/Color.md';
 
 export default {
-      name: 'home',
+      name: 'color',
       data () {
             return {
                   colorMaterial: [
@@ -1126,7 +1126,7 @@ export default {
             justify-content: space-between;
             align-items: center;
             width: 100%;
-            min-width: 300px;
+            min-width: 240px;
             height: 50px;
             padding: 10px 15px;
             font-size: 14px;

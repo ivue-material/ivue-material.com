@@ -21,7 +21,7 @@ IVue Material 是一个渐进式的框架，必须作出不支持一些老版本
 
 通过 CDN 引入快速使用 ivue-material 写出一个示例。
 
-<iframe width="100%" height="300" src="//jsfiddle.net/qq282126990/hsbag1o0/2/embedded/html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/qq282126990/hsbag1o0/2/embedded/result,html/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 ## NPM
 

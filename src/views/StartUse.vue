@@ -1,5 +1,5 @@
 <template>
-      <div v-highlight v-html="StartUseMdContent" class="home"></div>
+      <div v-highlight v-html="StartUseMdContent"></div>
 </template>
 
 <script>

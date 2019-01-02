@@ -13,21 +13,32 @@
                   <!-- 左导航 -->
                   <div class="app-content-left">
                         <ul class="router-lists">
-                              <router-link
-                                    class="router-lists-item"
-                                    v-for="item in routers"
-                                    :key="item.name"
-                                    :to="item.route"
-                              >
-                                    {{item.name}}
-                                    <ul v-if="item.child.length > 0">
-                                          <li
-                                                class="router-lists-item-child"
+                              <li v-for="item in routers" :key="item.name" class="router-lists-li">
+                                    <router-link
+                                          :to="item.router"
+                                          v-if="item.router"
+                                          class="router-lists-item"
+                                    >{{item.name}}</router-link>
+                                    <div v-else>
+                                          <p class="router-lists--child-header">{{item.name}}</p>
+                                          <div
+                                                v-if="item.child.length > 0"
                                                 v-for="child in item.child"
                                                 :key="child.name"
-                                          >{{child.name}}</li>
-                                    </ul>
-                              </router-link>
+                                                class="router-lists--child-group"
+                                          >
+                                                <p class="router-lists--child">{{child.name}}</p>
+                                                <ul>
+                                                      <router-link
+                                                            v-for="menu in child.menu"
+                                                            :to="menu.router"
+                                                            :key="menu.name"
+                                                            class="router-lists--child-item"
+                                                      >{{menu.name}}</router-link>
+                                                </ul>
+                                          </div>
+                                    </div>
+                              </li>
                         </ul>
                   </div>
                   <!-- 右内容 -->
@@ -52,25 +63,47 @@ export default {
                   routers: [
                         {
                               name: '安装',
-                              route: '/install',
+                              router: '/install',
                               child: []
                         },
                         {
                               name: '开始使用',
-                              route: '/start-use',
+                              router: '/start-use',
                               child: []
                         },
                         {
                               name: '色彩',
-                              route: '/color',
+                              router: '/color',
                               child: []
                         },
-                         {
+                        {
                               name: '组件',
-                              route: '/component',
-                              child: []
+                              child: [
+                                    {
+                                          name: '布局',
+                                          menu: [
+                                                {
+                                                      name: 'Elevation',
+                                                      router: '/components/elevation'
+                                                },
+                                                {
+                                                      name: 'Layout',
+                                                      router: '/components/Layout'
+                                                }
+                                          ]
+                                    }
+                              ]
                         }
                   ]
+            }
+      },
+      created () {
+            let route = this.$route;
+            if (route.name === 'error') {
+                  this.$router.replace({
+                        name: 'error',
+                        params: '/home'
+                  });
             }
       }
 }
@@ -87,7 +120,6 @@ export default {
       flex-direction: column;
       background-color: #f5f5f5;
       font-size: 14px;
-
       h1,
       h2,
       h3,
@@ -147,6 +179,10 @@ export default {
             background-position: center;
       }
 
+      code {
+            background-color: #f3f5f6;
+      }
+
       .router-link-active {
             color: #2d8cf0;
       }
@@ -201,25 +237,55 @@ export default {
                   flex: 0 0 auto;
                   box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
                   border-right: 1px solid #e4e7e9;
-
                   .router-lists {
                         display: flex;
                         flex-direction: column;
-                        &-item {
+                        &-li {
+                              display: block;
                               flex: 1;
                               margin-bottom: 8px;
                               text-align: left;
                               font-size: 16px;
+                              color: #7f8c8d;
+                              min-height: 40px;
+                        }
+                        &-item {
+                              display: block;
+                              flex: 1;
+                              text-align: left;
+                              font-size: 16px;
                               font-weight: 500;
                               color: #7f8c8d;
-                              height: 40px;
-                              ul {
-                                    padding-left: 13px;
+                              line-height: 40px;
+                              cursor: pointer;
+                              transition: color 0.5s;
+                              &:hover {
+                                    color: #2d8cf0;
                               }
-                              &-child {
-                                    margin-top: 7px;
-                                    font-weight: initial;
+                        }
+                        &--child-header {
+                              font-size: 16px;
+                              line-height: 40px;
+                        }
+                        &--child-group {
+                              line-height: normal;
+                        }
+                        &--child {
+                              padding-left: 8px;
+                              font-weight: initial;
+                              font-size: 14px;
+                              line-height: 40px;
+                              &-item {
+                                    display: block;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                    padding-left: 16px;
+                                    list-style: none;
                                     font-size: 14px;
+                                    font-weight: normal;
+                                    color: inherit;
+                                    line-height: 40px;
                               }
                         }
                   }
@@ -235,6 +301,24 @@ export default {
                   width: 83.33333333%;
                   p {
                         margin: 5px;
+                  }
+                  table {
+                        width: 100%;
+                        table-layout: auto;
+                        border-collapse: collapse;
+                        border-spacing: 0;
+                        font-size: 13px;
+                        line-height: 18px;
+                  }
+                  thead {
+                        background-color: #eee;
+                  }
+                  th,
+                  td {
+                        padding: 8px 16px;
+                        border: 1px solid #e0e0e0;
+                        text-align: left;
+                        vertical-align: middle;
                   }
             }
       }

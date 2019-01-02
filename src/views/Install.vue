@@ -6,11 +6,7 @@
 import InstallMd from '../markdown/Install.md';
 
 export default {
-      name: 'home',
-      data () {
-            return {
-            }
-      },
+      name: 'install',
       computed: {
             InstallMdContent () {
                   return InstallMd;
