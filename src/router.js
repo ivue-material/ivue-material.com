@@ -6,6 +6,8 @@ import StartUse from './views/StartUse.vue'
 import Color from './views/Color.vue'
 import Elevation from './views/Elevation.vue'
 import Layout from './views/Layout.vue'
+import IvueContent from './views/IvueContent.vue'
+import IvueButton from './views/IvueButton.vue'
 
 Vue.use(Router);
 
@@ -46,10 +48,22 @@ export default new Router({
       name: 'elevation',
       component: Elevation
     },
+    // Layout
     {
       path: '/components/layout',
       name: 'layout',
       component: Layout
+    },
+    // content
+    {
+      path: '/components/ivue-content',
+      name: 'ivue-content',
+      component: IvueContent
+    },
+    {
+      path: '/components/ivue-button',
+      name: 'ivue-button',
+      component: IvueButton
     }
   ]
 })

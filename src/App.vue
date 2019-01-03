@@ -80,6 +80,19 @@ export default {
                               name: '组件',
                               child: [
                                     {
+                                          name: '基础',
+                                          menu: [
+                                                {
+                                                      name: 'content 内容',
+                                                      router: '/components/ivue-content'
+                                                },
+                                                {
+                                                      name: 'button 按钮',
+                                                      router: '/components/ivue-button'
+                                                }
+                                          ]
+                                    },
+                                    {
                                           name: '布局',
                                           menu: [
                                                 {
@@ -88,7 +101,7 @@ export default {
                                                 },
                                                 {
                                                       name: 'Layout',
-                                                      router: '/components/Layout'
+                                                      router: '/components/layout'
                                                 }
                                           ]
                                     }
@@ -237,6 +250,9 @@ export default {
                   flex: 0 0 auto;
                   box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
                   border-right: 1px solid #e4e7e9;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
                   .router-lists {
                         display: flex;
                         flex-direction: column;
