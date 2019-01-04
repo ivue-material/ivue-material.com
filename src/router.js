@@ -8,6 +8,7 @@ import Elevation from './views/Elevation.vue'
 import Layout from './views/Layout.vue'
 import IvueContent from './views/IvueContent.vue'
 import IvueButton from './views/IvueButton.vue'
+import IvueIcon from './views/IvueIcon.vue'
 
 Vue.use(Router);
 
@@ -60,10 +61,17 @@ export default new Router({
       name: 'ivue-content',
       component: IvueContent
     },
+    // button
     {
       path: '/components/ivue-button',
       name: 'ivue-button',
       component: IvueButton
+    },
+    // icon
+    {
+      path: '/components/ivue-icon',
+      name: 'ivue-icon',
+      component: IvueIcon
     }
   ]
 })

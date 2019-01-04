@@ -89,6 +89,10 @@ export default {
                                                 {
                                                       name: 'button 按钮',
                                                       router: '/components/ivue-button'
+                                                },
+                                                {
+                                                      name: 'icon 图标',
+                                                      router: '/components/ivue-icon'
                                                 }
                                           ]
                                     },
