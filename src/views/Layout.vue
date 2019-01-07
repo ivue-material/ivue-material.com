@@ -6,7 +6,7 @@
 import LayoutMd from '../markdown/Layout.md';
 
 export default {
-      name: 'start-use',
+      name: 'layout',
       computed: {
             LayoutMdContent () {
                   return LayoutMd;

@@ -108,6 +108,19 @@ export default {
                                                       router: '/components/layout'
                                                 }
                                           ]
+                                    },
+                                    {
+                                          name: 'UI',
+                                          menu: [
+                                                {
+                                                      name: 'List 列表',
+                                                      router: '/components/ivue-list'
+                                                },
+                                                {
+                                                      name: 'Carousel 走马灯',
+                                                      router: '/components/ivue-carousel'
+                                                }
+                                          ]
                                     }
                               ]
                         }
@@ -257,15 +270,16 @@ export default {
                   overflow: hidden;
                   text-overflow: ellipsis;
                   white-space: nowrap;
+                              font-size: 14px;
                   .router-lists {
                         display: flex;
                         flex-direction: column;
+                        margin: 0;
                         &-li {
                               display: block;
                               flex: 1;
                               margin-bottom: 8px;
                               text-align: left;
-                              font-size: 16px;
                               color: #7f8c8d;
                               min-height: 40px;
                         }
@@ -273,7 +287,6 @@ export default {
                               display: block;
                               flex: 1;
                               text-align: left;
-                              font-size: 16px;
                               font-weight: 500;
                               color: #7f8c8d;
                               line-height: 40px;
@@ -289,6 +302,9 @@ export default {
                         }
                         &--child-group {
                               line-height: normal;
+                              ul{
+                                    margin-left: 15px;
+                              }
                         }
                         &--child {
                               padding-left: 8px;
@@ -300,7 +316,6 @@ export default {
                                     overflow: hidden;
                                     text-overflow: ellipsis;
                                     white-space: nowrap;
-                                    padding-left: 16px;
                                     list-style: none;
                                     font-size: 14px;
                                     font-weight: normal;

@@ -6,7 +6,7 @@
 import IvueButtonMd from '../markdown/IvueButton.md';
 
 export default {
-      name: 'start-use',
+      name: 'ivue-button',
       computed: {
             IvueButtonMdContent () {
                   return IvueButtonMd;

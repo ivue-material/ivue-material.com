@@ -3,13 +3,13 @@
 </template>
 
 <script>
-import IvueIconMd from '../markdown/IvueIcon.md';
+import IvueCarouselMd from '../markdown/IvueCarousel.md';
 
 export default {
-      name: 'ivue-icon',
+      name: 'ivue-carousel',
       computed: {
-            IvueIconMdContent () {
-                  return IvueIconMd;
+            IvueCarouselMdContent () {
+                  return IvueCarouselMd;
             }
       }
 }

@@ -4,8 +4,7 @@
 
 ### 例子：
 
-<iframe width="100%" height="300" src="//jsfiddle.net/qq282126990/pvjf38mz/2/embedded/result,html,css/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-
+<iframe width="100%" height="300" src="//jsfiddle.net/qq282126990/fuze6g7d/1/embedded/result,html,css/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 ## API
 

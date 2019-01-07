@@ -9,6 +9,7 @@ import Layout from './views/Layout.vue'
 import IvueContent from './views/IvueContent.vue'
 import IvueButton from './views/IvueButton.vue'
 import IvueIcon from './views/IvueIcon.vue'
+import IvueList from './views/IvueList.vue'
 
 Vue.use(Router);
 
@@ -72,6 +73,12 @@ export default new Router({
       path: '/components/ivue-icon',
       name: 'ivue-icon',
       component: IvueIcon
+    },
+    // IvueList
+    {
+      path: '/components/ivue-list',
+      name: 'ivue-list',
+      component: IvueList
     }
   ]
 })

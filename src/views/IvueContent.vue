@@ -6,7 +6,7 @@
 import IvueContentMd from '../markdown/IvueContent.md';
 
 export default {
-      name: 'start-use',
+      name: 'ivue-content',
       computed: {
             IvueContentMdContent () {
                   return IvueContentMd;
