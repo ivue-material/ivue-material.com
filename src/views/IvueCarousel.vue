@@ -1,5 +1,5 @@
 <template>
-      <div v-highlight v-html="IvueIconMdContent"></div>
+      <div v-highlight v-html="IvueCarouselMdContent"></div>
 </template>
 
 <script>

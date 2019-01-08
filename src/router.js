@@ -10,6 +10,7 @@ import IvueContent from './views/IvueContent.vue'
 import IvueButton from './views/IvueButton.vue'
 import IvueIcon from './views/IvueIcon.vue'
 import IvueList from './views/IvueList.vue'
+import IvueCarousel from './views/IvueCarousel.vue'
 
 Vue.use(Router);
 
@@ -79,6 +80,12 @@ export default new Router({
       path: '/components/ivue-list',
       name: 'ivue-list',
       component: IvueList
+    },
+    // IvueCarousel
+    {
+      path: '/components/ivue-carousel',
+      name: 'ivue-carousel',
+      component: IvueCarousel
     }
   ]
 })
