@@ -4,11 +4,11 @@
 
 ### 例子：
 
-<iframe width="100%" height="300" src="//jsfiddle.net/qq282126990/fuze6g7d/1/embedded/result,html,css/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/qq282126990/4k5uzgjh/embedded/result,html,css,js/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 ## API
 
 | 名称    | 说明                                                | 类型   | 默认 |
 | ------- | :-------------------------------------------------- | ------ | ---- |
-| iVueTag | 输出标签。例如，当你想创建一个部分而不是div时很有用 | String | div  |
+| ivue-tag | 输出标签。例如，当你想创建一个部分而不是div时很有用 | String | div  |
 

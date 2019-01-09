@@ -5,45 +5,45 @@
 ## 用法
 
 
-<iframe width="100%" height="100" src="//jsfiddle.net/qq282126990/xdhk8nLw/10/embedded/result,html/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/qq282126990/jw1ofmqk/embedded/result,html/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 ## Flat
 
 平面按钮没有框阴影，也没有背景。仅在悬停时显示按钮的背景
 
-<iframe width="100%" height="100" src="//jsfiddle.net/qq282126990/oz65s4hk/1/embedded/result,html/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/qq282126990/kwhoceqr/embedded/result,html/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 ## Raised
 
 凸陷的按钮具有单击时增加的框阴影。这是默认样式
 
-<iframe width="100%" height="100" src="//jsfiddle.net/qq282126990/3uLksapr/1/embedded/result,html/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/qq282126990/3uLksapr/1/embedded/result,html/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 
 ## Depressed
 
 凹陷的按钮仍然保持其背景颜色，但没有框阴影
 
-<iframe width="100%" height="100" src="//jsfiddle.net/qq282126990/vxuo3dtw/embedded/result,html/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/qq282126990/vxuo3dtw/embedded/result,html/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 
 ## Outline
 
 轮廓按钮从应用的当前颜色继承其边框
 
-<iframe width="100%" height="100" src="//jsfiddle.net/qq282126990/nkabx7js/embedded/result,html/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/qq282126990/nkabx7js/embedded/result,html/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 ## Link
 
 按钮将变成一个 ```a``` 连接跳转到 ```href``` 指定的地址
 
-<iframe width="100%" height="100" src="//jsfiddle.net/qq282126990/bjadq6or/2/embedded/result,html/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/qq282126990/bjadq6or/2/embedded/result,html/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 ## Icon
 
 按钮显示为圆形图标
 
-<iframe width="100%" height="100" src="//jsfiddle.net/qq282126990/2r3qLe4t/4/embedded/result,html/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/qq282126990/2r3qLe4t/4/embedded/result,html/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 <br>
 
@@ -68,10 +68,10 @@
 | replace          | router-link                                                   | Boolean       | -         |
 | append           | router-link                                                   | Boolean       | -         |
 | tag              | router-link                                                   | String         | -         |
-| activeClass      | router-link                                                   | String         | -         |
+| active-class      | router-link                                                   | String         | -         |
 | exact            | router-link                                                   | Boolean        | undefined |
 | event            | router-link                                                   | String, Array  | -         |
-| exactActiveClass | router-link                                                   | String         | -         |
+| exact-active-class | router-link                                                   | String         | -         |
 | href             | router-link                                                   | String, Object | -         |
 | disabled         | router-link                                                   | Boolean        | -         |
 | nuxt             | router-link                                                   | Boolean        | -         |

@@ -11,6 +11,7 @@ import IvueButton from './views/IvueButton.vue'
 import IvueIcon from './views/IvueIcon.vue'
 import IvueList from './views/IvueList.vue'
 import IvueCarousel from './views/IvueCarousel.vue'
+import IvueSwitch from './views/IvueSwitch.vue'
 
 Vue.use(Router);
 
@@ -75,17 +76,23 @@ export default new Router({
       name: 'ivue-icon',
       component: IvueIcon
     },
-    // IvueList
+    // list
     {
       path: '/components/ivue-list',
       name: 'ivue-list',
       component: IvueList
     },
-    // IvueCarousel
+    // carousel
     {
       path: '/components/ivue-carousel',
       name: 'ivue-carousel',
       component: IvueCarousel
+    },
+    // IvueSwitch
+    {
+      path: '/components/ivue-switch',
+      name: 'ivue-switch',
+      component: IvueSwitch
     }
   ]
 })

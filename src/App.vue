@@ -119,6 +119,10 @@ export default {
                                                 {
                                                       name: 'Carousel 走马灯',
                                                       router: '/components/ivue-carousel'
+                                                },
+                                                {
+                                                      name: 'Switch 开关',
+                                                      router: '/components/ivue-switch'
                                                 }
                                           ]
                                     }

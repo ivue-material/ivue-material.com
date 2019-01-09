@@ -7,7 +7,7 @@
 
 规范中的每种色彩都会被转换为背景和文本颜色以便在应用程序中通过一个类进行样式化，比如：```<div class="red">``` 或者 ```<span class="red--text">``` 。这些类的色彩定义在[这里](https://github.com/qq282126990/ivue-ui/blob/master/src/styles/theme/color.scss)。
 
-<iframe width="100%" height="100" src="//jsfiddle.net/qq282126990/6kzt3rg5/4/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/qq282126990/6kzt3rg5/4/embedded/result,html,css,js/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 
 ## 引入颜色包

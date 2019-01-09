@@ -21,7 +21,7 @@
 
 要开始使用布局，您需要做的是创建一个ivue-layout父元素，它将包含一个列表ivue-layout-item。您可以设置所需的列数：
 
-<iframe width="100%" height="120" src="//jsfiddle.net/qq282126990/s5cu8qhr/1/embedded/result,html,css/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/qq282126990/s5cu8qhr/1/embedded/result,html,css/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 <br>
 <br>
@@ -38,13 +38,13 @@
 <br>
 
 查看这段代码并调整浏览器大小以查看更改：
-<iframe width="100%" height="120" src="//jsfiddle.net/qq282126990/eqxaf0g3/embedded/result,html,css/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/qq282126990/eqxaf0g3/embedded/result,html,css/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 <br>
 
 同时列布局也适用于嵌套布局：
 
-<iframe width="100%" height="150" src="//jsfiddle.net/qq282126990/qr6v4eux/1/embedded/result,html,css/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/qq282126990/qr6v4eux/1/embedded/result,html,css/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 ## 对齐
 
@@ -57,7 +57,7 @@
 
 布局系统根据项目数量计算子项大小。但是如果你想为每个项目设置尺寸。只需在项目中设置一个 ```ivue-size-[amount]``` ，例如ivue-size-30。总是以％表示的大小可以是5的倍数，也可以接受值33和66。
 
-<iframe width="100%" height="120" src="//jsfiddle.net/qq282126990/m1a2y3Lx/embedded/result,html,css/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/qq282126990/m1a2y3Lx/embedded/result,html,css/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 ## 响应
 
@@ -71,7 +71,7 @@
 
 在较小的屏幕上隐藏元素的需求是相当普遍的。你可以使用这些 ```ivue-[breakpoint]-hide``` 类来做到这一点：
 
-<iframe width="100%" height="200" src="//jsfiddle.net/qq282126990/ufb5vj0q/2/embedded/result,html,css/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/qq282126990/ufb5vj0q/2/embedded/result,html,css/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 ## API
 
