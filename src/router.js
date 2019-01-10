@@ -6,12 +6,13 @@ import StartUse from './views/StartUse.vue'
 import Color from './views/Color.vue'
 import Elevation from './views/Elevation.vue'
 import Layout from './views/Layout.vue'
-import IvueContent from './views/IvueContent.vue'
-import IvueButton from './views/IvueButton.vue'
-import IvueIcon from './views/IvueIcon.vue'
-import IvueList from './views/IvueList.vue'
-import IvueCarousel from './views/IvueCarousel.vue'
-import IvueSwitch from './views/IvueSwitch.vue'
+import Content from './views/Content.vue'
+import Button from './views/Button.vue'
+import Icon from './views/Icon.vue'
+import List from './views/List.vue'
+import Carousel from './views/Carousel.vue'
+import Switch from './views/Switch.vue'
+import BottomNav from './views/BottomNav.vue'
 
 Vue.use(Router);
 
@@ -60,39 +61,45 @@ export default new Router({
     },
     // content
     {
-      path: '/components/ivue-content',
-      name: 'ivue-content',
-      component: IvueContent
+      path: '/components/content',
+      name: 'content',
+      component: Content
     },
     // button
     {
-      path: '/components/ivue-button',
-      name: 'ivue-button',
-      component: IvueButton
+      path: '/components/button',
+      name: 'button',
+      component: Button
     },
     // icon
     {
-      path: '/components/ivue-icon',
-      name: 'ivue-icon',
-      component: IvueIcon
+      path: '/components/icon',
+      name: 'icon',
+      component: Icon
     },
     // list
     {
-      path: '/components/ivue-list',
-      name: 'ivue-list',
-      component: IvueList
+      path: '/components/list',
+      name: 'list',
+      component: List
     },
     // carousel
     {
-      path: '/components/ivue-carousel',
-      name: 'ivue-carousel',
-      component: IvueCarousel
+      path: '/components/carousel',
+      name: 'carousel',
+      component: Carousel
     },
-    // IvueSwitch
+    // Switch
     {
-      path: '/components/ivue-switch',
-      name: 'ivue-switch',
-      component: IvueSwitch
+      path: '/components/switch',
+      name: 'switch',
+      component: Switch
+    },
+    // BottomNav
+    {
+      path: '/components/bottom-nav',
+      name: 'bottom-nav',
+      component: BottomNav
     }
   ]
 })

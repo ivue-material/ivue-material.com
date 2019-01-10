@@ -1,15 +1,15 @@
 <template>
-      <div v-highlight v-html="IvueListMdContent"></div>
+      <div v-highlight v-html="ListMdContent"></div>
 </template>
 
 <script>
-import IvueListMd from '../markdown/IvueList.md';
+import ListMd from '../markdown/List.md';
 
 export default {
       name: 'ivue-list',
       computed: {
-            IvueListMdContent () {
-                  return IvueListMd;
+            ListMdContent () {
+                  return ListMd;
             }
       }
 }

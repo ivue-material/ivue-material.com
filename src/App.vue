@@ -84,15 +84,15 @@ export default {
                                           menu: [
                                                 {
                                                       name: 'content 内容',
-                                                      router: '/components/ivue-content'
+                                                      router: '/components/content'
                                                 },
                                                 {
                                                       name: 'button 按钮',
-                                                      router: '/components/ivue-button'
+                                                      router: '/components/button'
                                                 },
                                                 {
                                                       name: 'icon 图标',
-                                                      router: '/components/ivue-icon'
+                                                      router: '/components/icon'
                                                 }
                                           ]
                                     },
@@ -114,15 +114,19 @@ export default {
                                           menu: [
                                                 {
                                                       name: 'List 列表',
-                                                      router: '/components/ivue-list'
+                                                      router: '/components/list'
                                                 },
                                                 {
                                                       name: 'Carousel 走马灯',
-                                                      router: '/components/ivue-carousel'
+                                                      router: '/components/carousel'
                                                 },
                                                 {
                                                       name: 'Switch 开关',
-                                                      router: '/components/ivue-switch'
+                                                      router: '/components/switch'
+                                                },
+                                                 {
+                                                      name: 'BottomNav 底部导航',
+                                                      router: '/components/bottom-nav'
                                                 }
                                           ]
                                     }
