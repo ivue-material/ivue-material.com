@@ -13,6 +13,7 @@ import List from './views/List.vue'
 import Carousel from './views/Carousel.vue'
 import Switch from './views/Switch.vue'
 import BottomNav from './views/BottomNav.vue'
+import Breadcrumbs from './views/Breadcrumbs.vue'
 
 Vue.use(Router);
 
@@ -100,6 +101,12 @@ export default new Router({
       path: '/components/bottom-nav',
       name: 'bottom-nav',
       component: BottomNav
+    },
+    // Breadcrumbs
+    {
+      path: '/components/breadcrumbs',
+      name: 'breadcrumbs',
+      component: Breadcrumbs
     }
   ]
 })

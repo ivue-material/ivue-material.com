@@ -127,6 +127,10 @@ export default {
                                                  {
                                                       name: 'BottomNav 底部导航',
                                                       router: '/components/bottom-nav'
+                                                },
+                                                {
+                                                      name: 'Breadcrumbs 面包屑',
+                                                      router: '/components/breadcrumbs'
                                                 }
                                           ]
                                     }
