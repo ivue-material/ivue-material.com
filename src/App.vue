@@ -131,6 +131,10 @@ export default {
                                                 {
                                                       name: 'Breadcrumbs 面包屑',
                                                       router: '/components/breadcrumbs'
+                                                },
+                                                {
+                                                      name: 'Select 选择器',
+                                                      router: '/components/select'
                                                 }
                                           ]
                                     }

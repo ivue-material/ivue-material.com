@@ -14,6 +14,7 @@ import Carousel from './views/Carousel.vue'
 import Switch from './views/Switch.vue'
 import BottomNav from './views/BottomNav.vue'
 import Breadcrumbs from './views/Breadcrumbs.vue'
+import Select from './views/Select.vue'
 
 Vue.use(Router);
 
@@ -107,6 +108,12 @@ export default new Router({
       path: '/components/breadcrumbs',
       name: 'breadcrumbs',
       component: Breadcrumbs
+    },
+    // Select
+    {
+      path: '/components/select',
+      name: 'select',
+      component: Select
     }
   ]
 })
