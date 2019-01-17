@@ -6,7 +6,7 @@
 import SelectMd from '../markdown/Select.md';
 
 export default {
-      name: 'layout',
+      name: 'ivue-select',
       computed: {
            SelectMdContent () {
                   return SelectMd;

@@ -1,4 +1,4 @@
-# IvueList 列表
+# List 列表
 
 列表将多个行项垂直显示为单个连续元素。    
 组件用于显示信息，它可以包含一个头像、内容、操作、列表组标题等等。列表也可以包含子元素并在侧边栏（sidebar）使用。     
@@ -47,7 +47,7 @@
 | ivue-expand-single | 如果设置为true,则一次最多可扩展一个扩展列表项。扩展后的列表将在展开另一个列表时折叠，前提是 IvueListItem 开启了 ivue-expand | Boolean | false |
 
 
-### IvueListItem 列表项 API
+### ivue-list-item 列表项 API
 
 列表项将根据给定的交互类型呈现不同的标记。      
 

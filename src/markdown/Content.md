@@ -1,4 +1,4 @@
-# IvueContent 内容
+# Content 内容
 
 内容组件通常用于类似一张纸。
 

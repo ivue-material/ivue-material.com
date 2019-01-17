@@ -1,8 +1,8 @@
-# IvueSelect选择器
+# Select选择器
 
 使用模拟的增强下拉选择器来代替浏览器原生的选择器。选择器支持单选、多选、搜索，以及键盘快捷操作。 ```ivue-select```选择器应该与```ivue-option```或者```ivue-option-group```组件一起使用。选择将始终对```v-model``` ```prop```的变化做出反应。
 
-## 基础
+## 基本用法
 
 使用```v-model```双向绑定数据，单选,```value```只支持字符串或数字类型，多选，只支持数组类型，组件根据```ivue-option```的```value```返回数据。在展开选择器后，可以使用键盘的```up```和```down```快速上下选择，按下```enter```选择选项，按下```esc```收起选择器。
 
@@ -36,6 +36,8 @@
 
 ## API
 
+<br>
+
 ### props       
       
 | 属性          | 说明                             | 类型   | 默认值 |
@@ -62,9 +64,9 @@
 | on-clear | 点击清空按钮时触发 | - | -  |
 
 
-### ivue-option
+## ivue-option API
 
-API
+<br>
 
 ### props     
 
@@ -76,9 +78,9 @@ API
 | disabled| 是否禁用当前选项 | Boolean | false      |        
  
 
-### ivue-option-group
+## ivue-option-group API
 
-API
+<br>
 
 ### props     
 

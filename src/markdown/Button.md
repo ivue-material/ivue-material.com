@@ -1,9 +1,8 @@
-# IvueButton 按钮
+# Button 按钮
 
 按钮传达用户触摸它们时将发生的操作。它们可以是平坦的，凸起的，任何色彩辅助类都可以用来改变背景或文字的颜色。
 
-## 用法
-
+## 基本用法
 
 <iframe width="100%" height="300" src="//jsfiddle.net/qq282126990/jw1ofmqk/embedded/result,html/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 

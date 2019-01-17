@@ -1,10 +1,10 @@
-# IvueBreadcrumbs面包屑
+# Breadcrumbs面包屑
 
 
 ```IvueBreadcrumbsItem```组件是一个页面导航辅助器。它可以接受一个```Material Icons```图标或字符作为分隔符。一个包含字段```href```，```text```和```disabled```的对象数组传递给组件```items```。此外，还有一个常规插槽用于更多地控制面包屑的使用```IvueBreadcrumbsItem```      
 
 
-## 基础
+## 基本用法
 
 默认情况下，面包屑使用文本分隔符。也可以是任何字符串。
 
@@ -24,6 +24,7 @@
 
 
 ## API
+<br>
 
 ### props       
       
@@ -44,7 +45,8 @@
 
 用于更多地控制面包屑的使用
 
-API
+### API
+<br>
 
 ### props       
       

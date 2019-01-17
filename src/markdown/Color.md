@@ -1,4 +1,4 @@
-# 色彩 
+# Color 色彩
 
 所有包含在 [Material Design 规范](https://material.io/design/color/#tools-for-picking-colors)中的所有色彩都可以通过 ```stylus``` 得到应用。
 这些值可以在您的样式表、组建文件和实际组件中通过color类 中使用。

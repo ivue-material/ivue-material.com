@@ -124,7 +124,7 @@ export default {
                                                       name: 'Switch 开关',
                                                       router: '/components/switch'
                                                 },
-                                                 {
+                                                {
                                                       name: 'BottomNav 底部导航',
                                                       router: '/components/bottom-nav'
                                                 },
@@ -135,6 +135,50 @@ export default {
                                                 {
                                                       name: 'Select 选择器',
                                                       router: '/components/select'
+                                                },
+                                                {
+                                                      name: 'AutoComplete 输入框自动完成功能',
+                                                      router: '/components/auto-complete'
+                                                },
+                                                {
+                                                      name: 'Input 输入框',
+                                                      router: '/components/input'
+                                                },
+                                                {
+                                                      name: 'Stepper 步骤条',
+                                                      router: '/components/stepper'
+                                                },
+                                                {
+                                                      name: 'UpLoad 上传',
+                                                      router: '/components/upLoad'
+                                                },
+                                                {
+                                                      name: 'Progress 进度条',
+                                                      router: '/components/progress'
+                                                },
+                                                {
+                                                      name: 'Notice 通知提醒',
+                                                      router: '/components/notice'
+                                                },
+                                                {
+                                                      name: 'Message 全局提示',
+                                                      router: '/components/message'
+                                                },
+                                                {
+                                                      name: 'LoadingBar 加载进度条',
+                                                      router: '/components/loading-bar'
+                                                },
+                                                {
+                                                      name: 'Tabs 标签页',
+                                                      router: '/components/tabs'
+                                                },
+                                                {
+                                                      name: 'Badge 图钉',
+                                                      router: '/components/badge'
+                                                },
+                                                {
+                                                      name: 'DatePicker 日期/月份选择器',
+                                                      router: '/components/date-picker'
                                                 }
                                           ]
                                     }
@@ -150,6 +194,11 @@ export default {
                         name: 'error',
                         params: '/home'
                   });
+            }
+      },
+      watch: {
+            $route () {
+                  window.scrollTo(0, 0)
             }
       }
 }
@@ -286,7 +335,7 @@ export default {
                   overflow: hidden;
                   text-overflow: ellipsis;
                   white-space: nowrap;
-                              font-size: 14px;
+                  font-size: 14px;
                   .router-lists {
                         display: flex;
                         flex-direction: column;
@@ -318,7 +367,7 @@ export default {
                         }
                         &--child-group {
                               line-height: normal;
-                              ul{
+                              ul {
                                     margin-left: 15px;
                               }
                         }
