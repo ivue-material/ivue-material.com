@@ -29,7 +29,7 @@
                               </svg>
                         </ivue-button>
 
-                        <ivue-button icon flat>
+                        <ivue-button icon flat @click="clickGithub">
                               <svg
                                     width="20px"
                                     viewBox="0 0 16 16"
@@ -70,6 +70,7 @@ import Hljs from 'highlight.js';
 export default {
       props: {
             jsfiddle: String,
+            github: String,
             code: String
       },
       data () {
@@ -83,6 +84,9 @@ export default {
       methods: {
             clickJsfiddle () {
                   window.open(this.jsfiddle)
+            },
+            clickGithub () {
+                  window.open(this.github)
             }
       }
 }
