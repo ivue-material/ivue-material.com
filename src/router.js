@@ -26,6 +26,7 @@ import Tabs from './views/Tabs.vue'
 import LoadingBar from './views/LoadingBar.vue'
 import Badge from './views/Badge.vue'
 import DatePicker from './views/DatePicker.vue'
+import Affix from './views/Affix.vue'
 
 Vue.use(Router);
 
@@ -191,6 +192,12 @@ export default new Router({
       path: '/components/date-picker',
       name: 'date-picker',
       component: DatePicker
+    },
+    // Affix
+    {
+      path: '/components/affix',
+      name: 'affix',
+      component: Affix
     }
   ]
 })

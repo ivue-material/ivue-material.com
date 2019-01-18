@@ -7,6 +7,7 @@ import Hljs from 'highlight.js';
 
 import 'ivue-material/dist/styles/ivue.css';
 import 'ivue-material/dist/styles/layout.css';
+import 'ivue-material/dist/styles/elevation.css';
 import 'ivue-material/dist/styles/color.css';
 import 'highlight.js/styles/xcode.css';
 
@@ -19,7 +20,6 @@ Vue.directive('highlight', {
     Array.prototype.forEach.call(blocks, Hljs.highlightBlock);
   }
 });
-
 
 new Vue({
   router,

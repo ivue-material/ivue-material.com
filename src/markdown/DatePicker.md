@@ -43,6 +43,62 @@
 
 日期选择器通过 JavaScript Date 对象支持国际化。 使用```locale```指定 BCP 47 语言标记。
 
+<iframe width="100%" height="500" src="//jsfiddle.net/qq282126990/0q2dv9p7/embedded/result,html,css,js/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+## 图标
+
+你可以覆盖选择器中的默认图标。
+
+<iframe width="100%" height="500" src="//jsfiddle.net/qq282126990/gzn5p6ow/embedded/result,html,css,js/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+## 只读
+
+通过设置属性```readonly```禁用选择新日期。
+
+<iframe width="100%" height="500" src="//jsfiddle.net/qq282126990/v4wax8n7/embedded/result,html,css,js/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+## 显示为月份
+
+通过设置```type```为```month```，让选择器初始显示为月份
+
+<iframe width="100%" height="500" src="//jsfiddle.net/qq282126990/jLotfa1g/embedded/result,html,css,js/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+
+## 日期跟随改变
+
+通过设置```reactive```为```true```，点击月份或年份让选择器日期跟随改变。
+
+<iframe width="100%" height="500" src="//jsfiddle.net/qq282126990/zrg6dfc2/embedded/result,html,css,js/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+## 可选择最大/最小日期
+
+通过设置```max```或```min```，设置最大/最小可选择日期。
+
+<iframe width="100%" height="500" src="//jsfiddle.net/qq282126990/15hq2rf6/embedded/result,html,css,js/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+## 自定义标题日期格式
+
+通过设置```title-date-format```，自定义标题的日期显示，其期望是一个函数。
+
+<iframe width="100%" height="500" src="//jsfiddle.net/qq282126990/56j42smu/embedded/result,html,css,js/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+## 自定义标题年份格式
+
+通过设置```title-year-format```，自定义标题年份格式显示，其期望是一个函数。
+
+<iframe width="100%" height="500" src="//jsfiddle.net/qq282126990/rqjs9v4a/embedded/result,html,css,js/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+## 自定义日期格式
+
+通过设置```day-format```，自定义日期格式显示，其期望是一个函数。
+
+<iframe width="100%" height="500" src="//jsfiddle.net/qq282126990/hxbod3wk/embedded/result,html,css,js/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+## 自定义表头部日/月格式
+
+通过设置```header-date-format```，自定义表头部日/月格式显示，其期望是一个函数。
+
+<iframe width="100%" height="500" src="//jsfiddle.net/qq282126990/k6L3xcya/embedded/result,html,css,js/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 
 ## API
@@ -87,6 +143,6 @@
 | --------- | :----------------------- | :------ | 
 | title-date-format | 自定义标题日期格式 | Function |
 | title-year-format | 自定义标题年份格式 | Function |
-| allowed-dates    | 使用函数指定允许选择的日期 | Function | -   |
 | day-format    | 自定义日期格式| Function | -   |
 | header-date-format    | 自定义表头部日/月格式| Function | -   |
+| allowed-dates    | 使用函数指定允许选择的日期 | Function | -   |
