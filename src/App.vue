@@ -248,14 +248,11 @@ export default {
       h4,
       h5,
       h6 {
+            display: block;
             margin: 12px 0;
-            display: inline-block;
             color: #2c3e50;
       }
 
-      h1 {
-            display: block;
-      }
 
       .hljs {
             padding: 15px;

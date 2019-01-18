@@ -50,4 +50,48 @@ export default {
 </script>
 `
 
+code.href = `
+<template>
+      <div>
+            <IvueButton href="https://github.com/qq282126990/ivue.com">默认效果</IvueButton>
+            <IvueButton href="https://github.com/qq282126990/ivue.com" color="primary">primary</IvueButton>
+            <IvueButton href="https://github.com/qq282126990/ivue.com" color="warning">warning</IvueButton>
+            <IvueButton href="https://github.com/qq282126990/ivue.com" color="red">error</IvueButton>
+            <IvueButton href="https://github.com/qq282126990/ivue.com" color="green">success</IvueButton>
+      </div>
+</template>
+
+<script>
+export default {
+}
+</script>
+`
+
+code.icon = `
+<template>
+      <div>
+            <IvueButton icon>
+                  <ivue-icon>face</ivue-icon>
+            </IvueButton>
+            <IvueButton icon color="primary">
+                  <ivue-icon>face</ivue-icon>
+            </IvueButton>
+            <IvueButton icon color="warning">
+                  <ivue-icon>face</ivue-icon>
+            </IvueButton>
+            <IvueButton icon color="red">
+                  <ivue-icon>face</ivue-icon>
+            </IvueButton>
+            <IvueButton icon color="green">
+                  <ivue-icon>face</ivue-icon>
+            </IvueButton>
+      </div>
+</template>
+
+<script>
+export default {
+}
+</script>
+`
+
 export default code;

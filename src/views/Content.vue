@@ -24,6 +24,7 @@
                   <Tag slot="demo"></Tag>
             </DocMarkdown>
             <h2>API</h2>
+            <h3>props</h3>
             <table>
                   <thead>
                         <tr>
