@@ -53,7 +53,7 @@
             <transition name="code">
                   <div class="doc-markdown-code" v-show="showCode">
                         <div class="doc-markdown-code--content">
-                              <pre><code ref="code">{{code}}</code></pre>
+                              <pre><code class="hljs xml" ref="code">{{code}}</code></pre>
                         </div>
                   </div>
             </transition>

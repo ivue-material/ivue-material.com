@@ -253,7 +253,6 @@ export default {
             color: #2c3e50;
       }
 
-
       .hljs {
             padding: 15px;
             border-radius: 5px;
@@ -267,7 +266,8 @@ export default {
       .hljs-selector-id,
       .hljs-selector-class,
       .hljs-regexp,
-      .hljs-deletion {
+      .hljs-deletion,
+      .hljs-selector-tag {
             color: #4177f6;
       }
 

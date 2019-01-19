@@ -9,7 +9,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .ivue-content {
       margin: 10px;
       width: 200px;

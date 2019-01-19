@@ -4,7 +4,7 @@
             <p>
                   图标可以使用图标字体或外部SVG。此外，可以接受一些大小尺寸，如
                   <code>2x, 3x, 4x and 5x</code>
-                  。默认情况下, IvueIcon 使用的是
+                  。默认情况下, <code>ivue-icon</code> 使用的是
                   <a
                         target="_blank"
                         href="https://material.io/tools/icons/?icon=mood_bad&amp;style=baseline"
@@ -48,7 +48,7 @@
                   <tbody>
                         <tr>
                               <td>ivue-size-[dimension]</td>
-                              <td align="left">增加图标的大小。它接受2x，3x，4x或5x</td>
+                              <td align="left">增加图标的大小。它接受 2x，3x，4x 或 5x </td>
                               <td align="left">ivue-size-3x</td>
                         </tr>
                   </tbody>

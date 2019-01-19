@@ -31,7 +31,7 @@ code.flat = `
 export default {
 }
 </script>
-`
+`;
 
 code.depressed = `
 <template>
@@ -48,7 +48,7 @@ code.depressed = `
 export default {
 }
 </script>
-`
+`;
 
 code.href = `
 <template>
@@ -65,7 +65,7 @@ code.href = `
 export default {
 }
 </script>
-`
+`;
 
 code.icon = `
 <template>
@@ -92,6 +92,6 @@ code.icon = `
 export default {
 }
 </script>
-`
+`;
 
 export default code;
