@@ -1,6 +1,5 @@
 <template>
       <div id="app">
-            <!-- 头部 -->
             <div class="app-header">
                   <div class="app-header-wrapper">
                         <div class="app-header-img">
@@ -28,7 +27,6 @@
                   </div>
             </div>
             <div class="app-content">
-                  <!-- 左导航 -->
                   <div class="app-content-left">
                         <ul class="router-lists">
                               <li v-for="item in routers" :key="item.name" class="router-lists-li">
@@ -59,7 +57,6 @@
                               </li>
                         </ul>
                   </div>
-                  <!-- 右内容 -->
                   <div class="app-content-right">
                         <router-view/>
                   </div>
@@ -68,7 +65,6 @@
 </template>
 
 <script>
-
 export default {
       name: 'app',
       data () {

@@ -7,9 +7,9 @@
             <DocMarkdown
                   :code="code.base"
                   jsfiddle="//jsfiddle.net/qq282126990/jw1ofmqk/"
-                  github="//github.com/qq282126990/ivue.com/blob/master/src/views/components/button/Defalut.vue"
+                  github="//github.com/qq282126990/ivue.com/blob/master/src/views/components/button/Default.vue"
             >
-                  <Defalut slot="demo"></Defalut>
+                  <Default slot="demo"></Default>
             </DocMarkdown>
             <h2>平面</h2>
             <p>
@@ -79,140 +79,140 @@
                   <thead>
                         <tr>
                               <th>名称</th>
-                              <th align="left">说明</th>
+                              <th>说明</th>
                               <th>类型</th>
-                              <th align="left">默认</th>
+                              <th>默认</th>
                         </tr>
                   </thead>
                   <tbody>
                         <tr>
                               <td>href</td>
-                              <td align="left">
+                              <td>
                                     在按钮上创建一个锚点。在这种情况下，生成的标签将是
                                     <code>&lt;a&gt;</code>
                               </td>
                               <td>String</td>
-                              <td align="left">null</td>
+                              <td>null</td>
                         </tr>
                         <tr>
                               <td>type</td>
-                              <td align="left">将 type 应用于按钮 - 它不会影响链接</td>
+                              <td>将 type 应用于按钮 - 它不会影响链接</td>
                               <td>String</td>
-                              <td align="left">button</td>
+                              <td>button</td>
                         </tr>
                         <tr>
                               <td>disabled</td>
-                              <td align="left">禁用该按钮并阻止其操作</td>
+                              <td>禁用该按钮并阻止其操作</td>
                               <td>Boolean</td>
-                              <td align="left">false</td>
+                              <td>false</td>
                         </tr>
                         <tr>
                               <td>ivue-ripple</td>
-                              <td align="left">启用/禁用涟漪效应</td>
+                              <td>启用/禁用涟漪效应</td>
                               <td>Boolean</td>
-                              <td align="left">false</td>
+                              <td>false</td>
                         </tr>
                         <tr>
                               <td>color</td>
-                              <td align="left">定义按钮颜色</td>
+                              <td>定义按钮颜色</td>
                               <td>String</td>
-                              <td align="left">null</td>
+                              <td>null</td>
                         </tr>
                         <tr>
                               <td>flat</td>
-                              <td align="left">是否扁平按钮</td>
+                              <td>是否扁平按钮</td>
                               <td>Boolean</td>
-                              <td align="left">-</td>
+                              <td>-</td>
                         </tr>
                         <tr>
                               <td>depressed</td>
-                              <td align="left">凹陷的按钮依然保持其背景色，但没有框阴影</td>
+                              <td>凹陷的按钮依然保持其背景色，但没有框阴影</td>
                               <td>Boolean</td>
-                              <td align="left">-</td>
+                              <td>-</td>
                         </tr>
                         <tr>
                               <td>icon</td>
-                              <td align="left">按钮显示为圆形图标</td>
+                              <td>按钮显示为圆形图标</td>
                               <td>Boolean</td>
-                              <td align="left">-</td>
+                              <td>-</td>
                         </tr>
                         <tr>
                               <td>outline</td>
-                              <td align="left">轮廓按钮从当前色彩应用继承他们的边框颜色</td>
+                              <td>轮廓按钮从当前色彩应用继承他们的边框颜色</td>
                               <td>Boolean</td>
-                              <td align="left">-</td>
+                              <td>-</td>
                         </tr>
                         <tr>
                               <td>to</td>
-                              <td align="left">router-link</td>
+                              <td>router-link</td>
                               <td>String,Object</td>
-                              <td align="left">-</td>
+                              <td>-</td>
                         </tr>
                         <tr>
                               <td>replace</td>
-                              <td align="left">router-link</td>
+                              <td>router-link</td>
                               <td>Boolean</td>
-                              <td align="left">-</td>
+                              <td>-</td>
                         </tr>
                         <tr>
                               <td>append</td>
-                              <td align="left">router-link</td>
+                              <td>router-link</td>
                               <td>Boolean</td>
-                              <td align="left">-</td>
+                              <td>-</td>
                         </tr>
                         <tr>
                               <td>tag</td>
-                              <td align="left">router-link</td>
+                              <td>router-link</td>
                               <td>String</td>
-                              <td align="left">-</td>
+                              <td>-</td>
                         </tr>
                         <tr>
                               <td>active-class</td>
-                              <td align="left">router-link</td>
+                              <td>router-link</td>
                               <td>String</td>
-                              <td align="left">-</td>
+                              <td>-</td>
                         </tr>
                         <tr>
                               <td>exact</td>
-                              <td align="left">router-link</td>
+                              <td>router-link</td>
                               <td>Boolean</td>
-                              <td align="left">undefined</td>
+                              <td>undefined</td>
                         </tr>
                         <tr>
                               <td>event</td>
-                              <td align="left">router-link</td>
+                              <td>router-link</td>
                               <td>String, Array</td>
-                              <td align="left">-</td>
+                              <td>-</td>
                         </tr>
                         <tr>
                               <td>exact-active-class</td>
-                              <td align="left">router-link</td>
+                              <td>router-link</td>
                               <td>String</td>
-                              <td align="left">-</td>
+                              <td>-</td>
                         </tr>
                         <tr>
                               <td>href</td>
-                              <td align="left">router-link</td>
+                              <td>router-link</td>
                               <td>String, Object</td>
-                              <td align="left">-</td>
+                              <td>-</td>
                         </tr>
                         <tr>
                               <td>disabled</td>
-                              <td align="left">router-link</td>
+                              <td>router-link</td>
                               <td>Boolean</td>
-                              <td align="left">-</td>
+                              <td>-</td>
                         </tr>
                         <tr>
                               <td>nuxt</td>
-                              <td align="left">router-link</td>
+                              <td>router-link</td>
                               <td>Boolean</td>
-                              <td align="left">-</td>
+                              <td>-</td>
                         </tr>
                         <tr>
                               <td>target</td>
-                              <td align="left">router-link</td>
+                              <td>router-link</td>
                               <td>String</td>
-                              <td align="left">-</td>
+                              <td>-</td>
                         </tr>
                   </tbody>
             </table>
@@ -221,13 +221,13 @@
                   <thead>
                         <tr>
                               <th>名称</th>
-                              <th align="left">说明</th>
+                              <th>说明</th>
                         </tr>
                   </thead>
                   <tbody>
                         <tr>
                               <td>click</td>
-                              <td align="left">单击鼠标后触发</td>
+                              <td>单击鼠标后触发</td>
                         </tr>
                   </tbody>
             </table>
@@ -236,13 +236,13 @@
                   <thead>
                         <tr>
                               <th>名称</th>
-                              <th align="left">说明</th>
+                              <th>说明</th>
                         </tr>
                   </thead>
                   <tbody>
                         <tr>
                               <td>ivue-icon</td>
-                              <td align="left">添加图标</td>
+                              <td>添加图标</td>
                         </tr>
                   </tbody>
             </table>
@@ -253,14 +253,12 @@
 import DocMarkdown from '@/components/DocMarkdown';
 import Code from '@/code/button';
 
-import Defalut from './components/button/Default.vue';
+import Default from './components/button/Default.vue';
 import Flat from './components/button/Flat.vue';
 import Depressed from './components/button/Depressed.vue';
 import Outline from './components/button/Outline.vue';
 import Href from './components/button/Href.vue';
 import Icon from './components/button/Icon.vue';
-
-import ButtonMd from '../markdown/Button.md';
 
 export default {
       name: 'ivue-button',
@@ -269,14 +267,9 @@ export default {
                   code: Code
             }
       },
-      computed: {
-            ButtonMdContent () {
-                  return ButtonMd;
-            }
-      },
       components: {
             DocMarkdown,
-            Defalut,
+            Default,
             Flat,
             Depressed,
             Outline,

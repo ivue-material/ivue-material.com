@@ -15,9 +15,9 @@
             <DocMarkdown
                   :code="code.base"
                   jsfiddle="//jsfiddle.net/qq282126990/jh8m79fb/"
-                  github="//github.com/qq282126990/ivue.com/blob/master/src/views/components/elevation/Defalut.vue"
+                  github="//github.com/qq282126990/ivue.com/blob/master/src/views/components/elevation/Default.vue"
             >
-                  <Defalut slot="demo"></Defalut>
+                  <Default slot="demo"></Default>
             </DocMarkdown>
             <h2>API</h2>
             <h3>class</h3>
@@ -25,13 +25,13 @@
                   <thead>
                         <tr>
                               <th>名称</th>
-                              <th align="left">说明</th>
+                              <th>说明</th>
                         </tr>
                   </thead>
                   <tbody>
                         <tr>
                               <td>ivue-elevation-[size]</td>
-                              <td align="left">向目标元素添加深度 ,大小可以是1到24.例如：
+                              <td>向目标元素添加深度 ,大小可以是1到24.例如：
                                     <code>ivue-elevation-4</code>
                               </td>
                         </tr>
@@ -44,7 +44,7 @@
 import DocMarkdown from '@/components/DocMarkdown';
 import Code from '@/code/elevation';
 
-import Defalut from './components/elevation/Default.vue';
+import Default from './components/elevation/Default.vue';
 
 export default {
       name: 'ivue-elevation',
@@ -53,14 +53,9 @@ export default {
                   code: Code
             }
       },
-      computed: {
-            ElevationMdContent () {
-                  return ElevationMd;
-            }
-      },
       components: {
             DocMarkdown,
-            Defalut
+            Default
       }
 }
 </script>

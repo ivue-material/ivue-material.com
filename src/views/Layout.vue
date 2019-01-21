@@ -8,42 +8,42 @@
                   <thead>
                         <tr>
                               <th>名称</th>
-                              <th align="left">说明</th>
+                              <th>说明</th>
                               <th>size</th>
                         </tr>
                   </thead>
                   <tbody>
                         <tr>
                               <td>xsmall</td>
-                              <td align="left">适用于宽度最大为600px的屏幕。适用于肖像中的小型，中型和大型手机</td>
+                              <td>适用于宽度最大为600px的屏幕。适用于肖像中的小型，中型和大型手机</td>
                               <td>
                                     <strong>&lt;600px</strong>
                               </td>
                         </tr>
                         <tr>
                               <td>small</td>
-                              <td align="left">适用于宽度介于600px和960px之间的屏幕</td>
+                              <td>适用于宽度介于600px和960px之间的屏幕</td>
                               <td>
                                     <strong>960px</strong>
                               </td>
                         </tr>
                         <tr>
                               <td>medium</td>
-                              <td align="left">适用于宽度介于960px和1280px之间的屏幕</td>
+                              <td>适用于宽度介于960px和1280px之间的屏幕</td>
                               <td>
                                     <strong>1280px</strong>
                               </td>
                         </tr>
                         <tr>
                               <td>large</td>
-                              <td align="left">适用于宽度介于1280像素到1920像素之间的屏幕</td>
+                              <td>适用于宽度介于1280像素到1920像素之间的屏幕</td>
                               <td>
                                     <strong>1920px</strong>
                               </td>
                         </tr>
                         <tr>
                               <td>xlarge</td>
-                              <td align="left">适用于宽度超过1920px的屏幕</td>
+                              <td>适用于宽度超过1920px的屏幕</td>
                               <td>
                                     <strong>&gt;1920px</strong>
                               </td>
@@ -61,25 +61,25 @@
                   <thead>
                         <tr>
                               <th>屏幕尺寸</th>
-                              <th align="left">间隔</th>
+                              <th>间隔</th>
                         </tr>
                   </thead>
                   <tbody>
                         <tr>
                               <td>xsmall</td>
-                              <td align="left">8px</td>
+                              <td>8px</td>
                         </tr>
                         <tr>
                               <td>small</td>
-                              <td align="left">16px</td>
+                              <td>16px</td>
                         </tr>
                         <tr>
                               <td>medium</td>
-                              <td align="left">24px</td>
+                              <td>24px</td>
                         </tr>
                         <tr>
                               <td>large</td>
-                              <td align="left">48px</td>
+                              <td>48px</td>
                         </tr>
                   </tbody>
             </table>
@@ -87,9 +87,9 @@
             <DocMarkdown
                   :code="code.base"
                   jsfiddle="//jsfiddle.net/qq282126990/0cem9wkq/"
-                  github="//github.com/qq282126990/ivue.com/blob/master/src/views/components/layout/Defalut.vue"
+                  github="//github.com/qq282126990/ivue.com/blob/master/src/views/components/layout/Default.vue"
             >
-                  <Defalut slot="demo"></Defalut>
+                  <Default slot="demo"></Default>
             </DocMarkdown>
             <br>
             <p>
@@ -178,21 +178,21 @@
                   <thead>
                         <tr>
                               <th>名称</th>
-                              <th align="left">说明</th>
+                              <th>说明</th>
                         </tr>
                   </thead>
                   <tbody>
                         <tr>
                               <td>ivue-gutter</td>
-                              <td align="left">在布局项之间启用自动装订线空间</td>
+                              <td>在布局项之间启用自动装订线空间</td>
                         </tr>
                         <tr>
                               <td>ivue-layout-nowrap</td>
-                              <td align="left">默认情况下，布局项将始终包装在父布局下。如果要禁用此行为，请使用此类，但响应性将不起作用</td>
+                              <td>默认情况下，布局项将始终包装在父布局下。如果要禁用此行为，请使用此类，但响应性将不起作用</td>
                         </tr>
                         <tr>
                               <td>ivue-alignment-[x]-[y]</td>
-                              <td align="left">
+                              <td>
                                     根据每个坐标的值设置所有子项的对齐方式。只有当x和y都存在时，对齐才有效如：
                                     <code>ivue-alignment-top-center</code>。可能的值是：
                                     <code>top</code> |
@@ -210,19 +210,19 @@
                   <thead>
                         <tr>
                               <th>名称</th>
-                              <th align="left">说明</th>
+                              <th>说明</th>
                         </tr>
                   </thead>
                   <tbody>
                         <tr>
                               <td>ivue-size-[amount]</td>
                               <td
-                                    align="left"
+                                   
                               >设置特定item的大小。数量可以是五的倍数， 例如ivue-size-25。还可以接受33,66和100以便于原型设计</td>
                         </tr>
                         <tr>
                               <td>ivue-[breakpoint]-size-[amount]</td>
-                              <td align="left">
+                              <td>
                                     将大小设置为特定 breakpoint 上的特定项。可能的值是：
                                     <code>xsmall</code> |
                                     <code>small</code> |
@@ -240,13 +240,13 @@
                   <thead>
                         <tr>
                               <th>名称</th>
-                              <th align="left">说明</th>
+                              <th>说明</th>
                         </tr>
                   </thead>
                   <tbody>
                         <tr>
                               <td>ivue-[breakpoint]-hide</td>
-                              <td align="left">
+                              <td>
                                     隐藏特定断点上的特定元素。可能的值是：
                                     <code>xsmall</code> |
                                     <code>small</code> |
@@ -264,7 +264,7 @@
 import DocMarkdown from '@/components/DocMarkdown';
 import Code from '@/code/layout';
 
-import Defalut from './components/layout/Default.vue';
+import Default from './components/layout/Default.vue';
 import Gutter from './components/layout/Gutter.vue';
 import Nested from './components/layout/Nested.vue';
 import Alignment from './components/layout/Alignment.vue';
@@ -281,7 +281,7 @@ export default {
       },
       components: {
             DocMarkdown,
-            Defalut,
+            Default,
             Gutter,
             Nested,
             Alignment,
