@@ -146,4 +146,11 @@ code.render = `
 </script>
 `;
 
+
+code.config =  `this.$IvueMessage.config({
+      top: 50,
+      duration: 3
+})
+`;
+
 export default code;

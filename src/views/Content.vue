@@ -25,24 +25,26 @@
             </DocMarkdown>
             <h2>API</h2>
             <h3>props</h3>
-            <table>
-                  <thead>
-                        <tr>
-                              <th>名称</th>
-                              <th>说明</th>
-                              <th>类型</th>
-                              <th>默认</th>
-                        </tr>
-                  </thead>
-                  <tbody>
-                        <tr>
-                              <td>ivue-tag</td>
-                              <td>输出标签。例如，当你想创建一个部分而不是div时很有用</td>
-                              <td>String</td>
-                              <td>div</td>
-                        </tr>
-                  </tbody>
-            </table>
+            <div class="table">
+                  <table>
+                        <thead>
+                              <tr>
+                                    <th>名称</th>
+                                    <th>说明</th>
+                                    <th>类型</th>
+                                    <th>默认</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                    <td>ivue-tag</td>
+                                    <td>输出标签。例如，当你想创建一个部分而不是div时很有用</td>
+                                    <td>String</td>
+                                    <td>div</td>
+                              </tr>
+                        </tbody>
+                  </table>
+            </div>
       </div>
 </template>
 

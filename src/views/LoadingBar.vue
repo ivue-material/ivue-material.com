@@ -9,10 +9,10 @@
                   <code>update()</code> 方法来传入一个精确的进度，比如在文件上传时会很有用，具体见API。
             </p>
             <h3>在路由中使用</h3>
-            <pre><code ref="route">{{route}}</code></pre>
+            <pre><code ref="route">{{code.route}}</code></pre>
 
             <h3>在异步请求中使用</h3>
-            <pre><code ref="ajax">{{ajax}}</code></pre>
+            <pre><code ref="ajax">{{code.ajax}}</code></pre>
             <h2>基本用法</h2>
             <p>
                   基本用法，点击
@@ -47,37 +47,39 @@
                   </li>
             </ul>
             <p>具体说明如下：</p>
-            <table>
-                  <thead>
-                        <tr>
-                              <th>属性</th>
-                              <th>说明</th>
-                              <th>参数</th>
-                        </tr>
-                  </thead>
-                  <tbody>
-                        <tr>
-                              <td>start</td>
-                              <td>开始从 0 显示进度条，并自动加载进度</td>
-                              <td>无</td>
-                        </tr>
-                        <tr>
-                              <td>finish</td>
-                              <td>结束进度条，自动补全剩余进度</td>
-                              <td>无</td>
-                        </tr>
-                        <tr>
-                              <td>error</td>
-                              <td>以错误的类型结束进度条，自动补全剩余进度</td>
-                              <td>无</td>
-                        </tr>
-                        <tr>
-                              <td>update</td>
-                              <td>精确加载到指定的进度</td>
-                              <td>percent，指定的进度百分比</td>
-                        </tr>
-                  </tbody>
-            </table>
+            <div class="table">
+                  <table>
+                        <thead>
+                              <tr>
+                                    <th>属性</th>
+                                    <th>说明</th>
+                                    <th>参数</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                    <td>start</td>
+                                    <td>开始从 0 显示进度条，并自动加载进度</td>
+                                    <td>无</td>
+                              </tr>
+                              <tr>
+                                    <td>finish</td>
+                                    <td>结束进度条，自动补全剩余进度</td>
+                                    <td>无</td>
+                              </tr>
+                              <tr>
+                                    <td>error</td>
+                                    <td>以错误的类型结束进度条，自动补全剩余进度</td>
+                                    <td>无</td>
+                              </tr>
+                              <tr>
+                                    <td>update</td>
+                                    <td>精确加载到指定的进度</td>
+                                    <td>percent，指定的进度百分比</td>
+                              </tr>
+                        </tbody>
+                  </table>
+            </div>
             <br>
             <p>另外提供了全局配置和全局销毁的方法：</p>
             <ul>
@@ -88,37 +90,39 @@
                         <code>this.$IvueLoadingBar.destroy()</code>
                   </li>
             </ul>
-            <pre><code ref="config">{{config}}</code></pre>
-            <table>
-                  <thead>
-                        <tr>
-                              <th>属性</th>
-                              <th>说明</th>
-                              <th>类型</th>
-                              <th>默认值</th>
-                        </tr>
-                  </thead>
-                  <tbody>
-                        <tr>
-                              <td>color</td>
-                              <td>进度条的颜色</td>
-                              <td>String</td>
-                              <td>primary</td>
-                        </tr>
-                        <tr>
-                              <td>failedColor</td>
-                              <td>失败时的进度条颜色</td>
-                              <td>String</td>
-                              <td>error</td>
-                        </tr>
-                        <tr>
-                              <td>height</td>
-                              <td>进度条高度，单位 px</td>
-                              <td>Number</td>
-                              <td>2</td>
-                        </tr>
-                  </tbody>
-            </table>
+            <pre><code ref="config">{{code.config}}</code></pre>
+            <div class="table">
+                  <table>
+                        <thead>
+                              <tr>
+                                    <th>属性</th>
+                                    <th>说明</th>
+                                    <th>类型</th>
+                                    <th>默认值</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                    <td>color</td>
+                                    <td>进度条的颜色</td>
+                                    <td>String</td>
+                                    <td>primary</td>
+                              </tr>
+                              <tr>
+                                    <td>failedColor</td>
+                                    <td>失败时的进度条颜色</td>
+                                    <td>String</td>
+                                    <td>error</td>
+                              </tr>
+                              <tr>
+                                    <td>height</td>
+                                    <td>进度条高度，单位 px</td>
+                                    <td>Number</td>
+                                    <td>2</td>
+                              </tr>
+                        </tbody>
+                  </table>
+            </div>
       </div>
 </template>
 
@@ -133,45 +137,7 @@ export default {
       name: 'ivue-loading-bar',
       data () {
             return {
-                  code: Code,
-                  route: `// 部分代码省略
-import IvueMaterial from 'ivue-material';
-Vue.use(IvueMaterial);
-
-router.beforeEach((to, from, next) => {
-    IvueMaterial.IvueLoadingBar.start();
-    next();
-});
-
-router.afterEach(route => {
-    IvueMaterial.IvueLoadingBar.finish();
-});`,
-                  ajax: `
-// 以jQuery的Ajax为例，部分代码省略
-import $ from 'jquery';
-export default {
-    methods: {
-        getData () {
-            this.$IvueLoadingBar.start();
-            $.ajax({
-                url: '/api/someurl',
-                type: 'get',
-                success: () => {
-                    this.$IvueLoadingBar.finish();
-                }
-                error: () => {
-                    this.$IvueLoadingBar.error();
-                }
-            });
-        }
-    }
-}
-`,
-                  config: `this.$IvueLoadingBar.config({
-    color: '#5cb85c',
-    failedColor: '#f0ad4e',
-    height: 5
-});`
+                  code: Code
             }
       },
       mounted () {

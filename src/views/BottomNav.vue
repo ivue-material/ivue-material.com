@@ -45,95 +45,101 @@
             </DocMarkdown>
             <h2>API</h2>
             <h3>props</h3>
-            <table>
-                  <thead>
-                        <tr>
-                              <th>属性</th>
-                              <th>说明</th>
-                              <th>类型</th>
-                              <th>默认值</th>
-                        </tr>
-                  </thead>
-                  <tbody>
-                        <tr>
-                              <td>active</td>
-                              <td>当前激活的导航</td>
-                              <td>Number, String</td>
-                              <td>-</td>
-                        </tr>
-                        <tr>
-                              <td>height</td>
-                              <td>底部导航栏高度</td>
-                              <td>Number, String</td>
-                              <td>56</td>
-                        </tr>
-                        <tr>
-                              <td>value</td>
-                              <td>底部导航栏是否可见(注意：父级节点必须设置 overflow: hidden)</td>
-                              <td>Boolean</td>
-                              <td>false</td>
-                        </tr>
-                        <tr>
-                              <td>color</td>
-                              <td>底部导航栏背景颜色</td>
-                              <td>String</td>
-                              <td>null</td>
-                        </tr>
-                        <tr>
-                              <td>position</td>
-                              <td>
-                                    底部导航栏定位(
-                                    <code>absolute</code>
-                                    <code>fixed</code>)
-                              </td>
-                              <td>String</td>
-                              <td>null</td>
-                        </tr>
-                        <tr>
-                              <td>shift</td>
-                              <td>不是激活状态时隐藏按钮上的文字</td>
-                              <td>Boolean</td>
-                              <td>false</td>
-                        </tr>
-                  </tbody>
-            </table>
+            <div class="table">
+                  <table>
+                        <thead>
+                              <tr>
+                                    <th>属性</th>
+                                    <th>说明</th>
+                                    <th>类型</th>
+                                    <th>默认值</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                    <td>active</td>
+                                    <td>当前激活的导航</td>
+                                    <td>Number, String</td>
+                                    <td>-</td>
+                              </tr>
+                              <tr>
+                                    <td>height</td>
+                                    <td>底部导航栏高度</td>
+                                    <td>Number, String</td>
+                                    <td>56</td>
+                              </tr>
+                              <tr>
+                                    <td>value</td>
+                                    <td>底部导航栏是否可见(注意：父级节点必须设置 overflow: hidden)</td>
+                                    <td>Boolean</td>
+                                    <td>false</td>
+                              </tr>
+                              <tr>
+                                    <td>color</td>
+                                    <td>底部导航栏背景颜色</td>
+                                    <td>String</td>
+                                    <td>null</td>
+                              </tr>
+                              <tr>
+                                    <td>position</td>
+                                    <td>
+                                          底部导航栏定位(
+                                          <code>absolute</code>
+                                          <code>fixed</code>)
+                                    </td>
+                                    <td>String</td>
+                                    <td>null</td>
+                              </tr>
+                              <tr>
+                                    <td>shift</td>
+                                    <td>不是激活状态时隐藏按钮上的文字</td>
+                                    <td>Boolean</td>
+                                    <td>false</td>
+                              </tr>
+                        </tbody>
+                  </table>
+            </div>
             <h2>events</h2>
-            <table>
-                  <thead>
-                        <tr>
-                              <th>属性</th>
-                              <th>说明</th>
-                              <th>用法</th>
-                        </tr>
-                  </thead>
-                  <tbody>
-                        <tr>
-                              <td>update:active</td>
-                              <td>设置激活那个导航</td>
-                              <td>this.$emit('update:active', item)</td>
-                        </tr>
-                        <tr>
-                              <td>on-change</td>
-                              <td>获取当前激活那个导航</td>
-                              <td>-</td>
-                        </tr>
-                  </tbody>
-            </table>
+            <div class="table">
+                  <table>
+                        <thead>
+                              <tr>
+                                    <th>属性</th>
+                                    <th>说明</th>
+                                    <th>用法</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                    <td>update:active</td>
+                                    <td>设置激活那个导航</td>
+                                    <td>this.$emit('update:active', item)</td>
+                              </tr>
+                              <tr>
+                                    <td>on-change</td>
+                                    <td>获取当前激活那个导航</td>
+                                    <td>-</td>
+                              </tr>
+                        </tbody>
+                  </table>
+            </div>
             <h2>slots</h2>
-            <table>
-                  <thead>
-                        <tr>
-                              <th>属性</th>
-                              <th>说明</th>
-                        </tr>
-                  </thead>
-                  <tbody>
-                        <tr>
-                              <td>default</td>
-                              <td>Vue默认原生插槽</td>
-                        </tr>
-                  </tbody>
-            </table>
+            <div class="table">
+                  <table>
+                        <thead>
+                              <tr>
+                                    <th>属性</th>
+                                    <th>说明</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                    <td>default</td>
+                                    <td>Vue默认原生插槽</td>
+                              </tr>
+                        </tbody>
+                  </table>
+            </div>
       </div>
 </template>
 

@@ -42,108 +42,114 @@
             </DocMarkdown>
             <h2>API</h2>
             <h3>props</h3>
-            <table>
-                  <thead>
-                        <tr>
-                              <th>属性</th>
-                              <th>说明</th>
-                              <th>类型</th>
-                              <th>默认值</th>
-                        </tr>
-                  </thead>
-                  <tbody>
-                        <tr>
-                              <td>value</td>
-                              <td>绑定的值，可使用 v-model 双向绑定</td>
-                              <td>String, Number</td>
-                              <td>-</td>
-                        </tr>
-                        <tr>
-                              <td>data</td>
-                              <td>自动完成的数据源</td>
-                              <td>Array</td>
-                              <td>-</td>
-                        </tr>
-                        <tr>
-                              <td>filter-method</td>
-                              <td>是否根据输入项进行筛选。当其为一个函数时，会接收 value 和 option 两个参数，当 option 符合筛选条件时，应返回 true，反之则返回 false</td>
-                              <td>Function, Boolean</td>
-                              <td>-</td>
-                        </tr>
-                        <tr>
-                              <td>placeholder</td>
-                              <td>输入框占位文本</td>
-                              <td>String</td>
-                              <td>请输入数据</td>
-                        </tr>
-                        <tr>
-                              <td>disabled</td>
-                              <td>输入框禁用输入</td>
-                              <td>Boolean</td>
-                              <td>false</td>
-                        </tr>
-                        <tr>
-                              <td>clearable</td>
-                              <td>是否显示清除按钮</td>
-                              <td>Boolean</td>
-                              <td>false</td>
-                        </tr>
-                        <tr>
-                              <td>clear-icon</td>
-                              <td>
-                                    输入框清除图标,通常与图标库
-                                    <a
-                                          target="_blank"
-                                          href="https://material.io/tools/icons/?icon=keyboard_arrow_left&amp;style=baseline"
-                                    >material.io</a>一起使用
-                              </td>
-                              <td>String</td>
-                              <td>cancel</td>
-                        </tr>
-                  </tbody>
-            </table>
+            <div class="table">
+                  <table>
+                        <thead>
+                              <tr>
+                                    <th>属性</th>
+                                    <th>说明</th>
+                                    <th>类型</th>
+                                    <th>默认值</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                    <td>value</td>
+                                    <td>绑定的值，可使用 v-model 双向绑定</td>
+                                    <td>String, Number</td>
+                                    <td>-</td>
+                              </tr>
+                              <tr>
+                                    <td>data</td>
+                                    <td>自动完成的数据源</td>
+                                    <td>Array</td>
+                                    <td>-</td>
+                              </tr>
+                              <tr>
+                                    <td>filter-method</td>
+                                    <td>是否根据输入项进行筛选。当其为一个函数时，会接收 value 和 option 两个参数，当 option 符合筛选条件时，应返回 true，反之则返回 false</td>
+                                    <td>Function, Boolean</td>
+                                    <td>-</td>
+                              </tr>
+                              <tr>
+                                    <td>placeholder</td>
+                                    <td>输入框占位文本</td>
+                                    <td>String</td>
+                                    <td>请输入数据</td>
+                              </tr>
+                              <tr>
+                                    <td>disabled</td>
+                                    <td>输入框禁用输入</td>
+                                    <td>Boolean</td>
+                                    <td>false</td>
+                              </tr>
+                              <tr>
+                                    <td>clearable</td>
+                                    <td>是否显示清除按钮</td>
+                                    <td>Boolean</td>
+                                    <td>false</td>
+                              </tr>
+                              <tr>
+                                    <td>clear-icon</td>
+                                    <td>
+                                          输入框清除图标,通常与图标库
+                                          <a
+                                                target="_blank"
+                                                href="https://material.io/tools/icons/?icon=keyboard_arrow_left&amp;style=baseline"
+                                          >material.io</a>一起使用
+                                    </td>
+                                    <td>String</td>
+                                    <td>cancel</td>
+                              </tr>
+                        </tbody>
+                  </table>
+            </div>
             <h3>events</h3>
-            <table>
-                  <thead>
-                        <tr>
-                              <th>事件</th>
-                              <th>说明</th>
-                              <th>返回值</th>
-                        </tr>
-                  </thead>
-                  <tbody>
-                        <tr>
-                              <td>on-select</td>
-                              <td>被选中时调用，参数为选中项的
-                                    <code>value</code> 值
-                              </td>
-                              <td>false</td>
-                        </tr>
-                        <tr>
-                              <td>on-focus</td>
-                              <td>获取焦点时触发</td>
-                              <td>event</td>
-                        </tr>
-                        <tr>
-                              <td>on-blur</td>
-                              <td>失去焦点时触发</td>
-                              <td>event</td>
-                        </tr>
-                        <tr>
-                              <td>on-search</td>
-                              <td>搜索补全项的时候调用</td>
-                              <td>value</td>
-                        </tr>
-                        <tr>
-                              <td>on-change</td>
-                              <td>选中
-                                    <code>option</code>，或
-                                    <code>input</code> 的 value 变化时，调用此函数
-                              </td>
-                              <td>value</td>
-                        </tr>
-                  </tbody>
-            </table>
+            <div class="table">
+                  <table>
+                        <thead>
+                              <tr>
+                                    <th>事件</th>
+                                    <th>说明</th>
+                                    <th>返回值</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                    <td>on-select</td>
+                                    <td>
+                                          被选中时调用，参数为选中项的
+                                          <code>value</code> 值
+                                    </td>
+                                    <td>false</td>
+                              </tr>
+                              <tr>
+                                    <td>on-focus</td>
+                                    <td>获取焦点时触发</td>
+                                    <td>event</td>
+                              </tr>
+                              <tr>
+                                    <td>on-blur</td>
+                                    <td>失去焦点时触发</td>
+                                    <td>event</td>
+                              </tr>
+                              <tr>
+                                    <td>on-search</td>
+                                    <td>搜索补全项的时候调用</td>
+                                    <td>value</td>
+                              </tr>
+                              <tr>
+                                    <td>on-change</td>
+                                    <td>
+                                          选中
+                                          <code>option</code>，或
+                                          <code>input</code> 的 value 变化时，调用此函数
+                                    </td>
+                                    <td>value</td>
+                              </tr>
+                        </tbody>
+                  </table>
+            </div>
       </div>
 </template>
 

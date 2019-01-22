@@ -4,7 +4,8 @@
             <p>
                   图标可以使用图标字体或外部SVG。此外，可以接受一些大小尺寸，如
                   <code>2x, 3x, 4x and 5x</code>
-                  。默认情况下, <code>ivue-icon</code> 使用的是
+                  。默认情况下,
+                  <code>ivue-icon</code> 使用的是
                   <a
                         target="_blank"
                         href="https://material.io/tools/icons/?icon=mood_bad&amp;style=baseline"
@@ -20,56 +21,62 @@
             </DocMarkdown>
             <h2>API</h2>
             <h3>props</h3>
-            <table>
-                  <thead>
-                        <tr>
-                              <th>名称</th>
-                              <th>说明</th>
-                              <th>value</th>
-                        </tr>
-                  </thead>
-                  <tbody>
-                        <tr>
-                              <td>svg-src</td>
-                              <td>svg图标的来源。请注意，对于外部domais上的图标，cors可能会影响其功能。</td>
-                              <td>null</td>
-                        </tr>
-                  </tbody>
-            </table>
+            <div class="table">
+                  <table>
+                        <thead>
+                              <tr>
+                                    <th>名称</th>
+                                    <th>说明</th>
+                                    <th>value</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                    <td>svg-src</td>
+                                    <td>svg图标的来源。请注意，对于外部domais上的图标，cors可能会影响其功能。</td>
+                                    <td>null</td>
+                              </tr>
+                        </tbody>
+                  </table>
+            </div>
             <h3>class</h3>
-            <table>
-                  <thead>
-                        <tr>
-                              <th>名称</th>
-                              <th>说明</th>
-                              <th>例子</th>
-                        </tr>
-                  </thead>
-                  <tbody>
-                        <tr>
-                              <td>ivue-size-[dimension]</td>
-                              <td>增加图标的大小。它接受 2x，3x，4x 或 5x </td>
-                              <td>ivue-size-3x</td>
-                        </tr>
-                  </tbody>
-            </table>
+            <div class="table">
+                  <table>
+                        <thead>
+                              <tr>
+                                    <th>名称</th>
+                                    <th>说明</th>
+                                    <th>例子</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                    <td>ivue-size-[dimension]</td>
+                                    <td>增加图标的大小。它接受 2x，3x，4x 或 5x</td>
+                                    <td>ivue-size-3x</td>
+                              </tr>
+                        </tbody>
+                  </table>
+            </div>
             <h3>events</h3>
-            <table>
-                  <thead>
-                        <tr>
-                              <th>名称</th>
-                              <th>说明</th>
-                              <th>value</th>
-                        </tr>
-                  </thead>
-                  <tbody>
-                        <tr>
-                              <td>svg-loaded</td>
-                              <td>在获取SVG图标后立即触发</td>
-                              <td>null</td>
-                        </tr>
-                  </tbody>
-            </table>
+            <div class="table">
+                  <table>
+                        <thead>
+                              <tr>
+                                    <th>名称</th>
+                                    <th>说明</th>
+                                    <th>value</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                    <td>svg-loaded</td>
+                                    <td>在获取SVG图标后立即触发</td>
+                                    <td>null</td>
+                              </tr>
+                        </tbody>
+                  </table>
+            </div>
       </div>
 </template>
 

@@ -80,96 +80,100 @@
             </DocMarkdown>
             <h2>API</h2>
             <h3>props</h3>
-            <table>
-                  <thead>
-                        <tr>
-                              <th>属性</th>
-                              <th>说明</th>
-                              <th>类型</th>
-                              <th>默认值</th>
-                        </tr>
-                  </thead>
-                  <tbody>
-                        <tr>
-                              <td>current-step</td>
-                              <td>当前步骤，从 0 开始计数</td>
-                              <td>Number</td>
-                              <td>0</td>
-                        </tr>
-                        <tr>
-                              <td>direction</td>
-                              <td>
-                                    步骤条方向，可选值为
-                                    <code>horizontal</code>（水平）或
-                                    <code>vertical</code>（垂直）
-                              </td>
-                              <td>String</td>
-                              <td>horizontal</td>
-                        </tr>
-                        <tr>
-                              <td>status</td>
-                              <td>
-                                    当前步骤的状态，可选值为
-                                    <code>wait</code> | 
-                                    <code>process</code> | 
-                                    <code>finish</code> | 
-                                    <code>error</code>
-                              </td>
-                              <td>String</td>
-                              <td>process</td>
-                        </tr>
-                  </tbody>
-            </table>
+            <div class="table">
+                  <table>
+                        <thead>
+                              <tr>
+                                    <th>属性</th>
+                                    <th>说明</th>
+                                    <th>类型</th>
+                                    <th>默认值</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                    <td>current-step</td>
+                                    <td>当前步骤，从 0 开始计数</td>
+                                    <td>Number</td>
+                                    <td>0</td>
+                              </tr>
+                              <tr>
+                                    <td>direction</td>
+                                    <td>
+                                          步骤条方向，可选值为
+                                          <code>horizontal</code>（水平）或
+                                          <code>vertical</code>（垂直）
+                                    </td>
+                                    <td>String</td>
+                                    <td>horizontal</td>
+                              </tr>
+                              <tr>
+                                    <td>status</td>
+                                    <td>
+                                          当前步骤的状态，可选值为
+                                          <code>wait</code> |
+                                          <code>process</code> |
+                                          <code>finish</code> |
+                                          <code>error</code>
+                                    </td>
+                                    <td>String</td>
+                                    <td>process</td>
+                              </tr>
+                        </tbody>
+                  </table>
+            </div>
             <h2>ivue-stepper-step</h2>
             <h3>props</h3>
-            <table>
-                  <thead>
-                        <tr>
-                              <th>属性</th>
-                              <th>说明</th>
-                              <th>类型</th>
-                              <th>默认值</th>
-                        </tr>
-                  </thead>
-                  <tbody>
-                        <tr>
-                              <td>status</td>
-                              <td>
-                                    当前步骤的状态，可选值为
-                                    <code>wait</code> | 
-                                    <code>process</code> | 
-                                    <code>finish</code> | 
-                                    <code>error</code>
-                              </td>
-                              <td>String</td>
-                              <td>process</td>
-                        </tr>
-                        <tr>
-                              <td>title</td>
-                              <td>标题</td>
-                              <td>String</td>
-                              <td>-</td>
-                        </tr>
-                        <tr>
-                              <td>content</td>
-                              <td>内容</td>
-                              <td>String</td>
-                              <td>-</td>
-                        </tr>
-                        <tr>
-                              <td>icon</td>
-                              <td>步骤图标</td>
-                              <td>String</td>
-                              <td>-</td>
-                        </tr>
-                        <tr>
-                              <td>editable</td>
-                              <td>当前步骤是否是否可以通过点击进行下一步</td>
-                              <td>String</td>
-                              <td>-</td>
-                        </tr>
-                  </tbody>
-            </table>
+            <div class="table">
+                  <table>
+                        <thead>
+                              <tr>
+                                    <th>属性</th>
+                                    <th>说明</th>
+                                    <th>类型</th>
+                                    <th>默认值</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                    <td>status</td>
+                                    <td>
+                                          当前步骤的状态，可选值为
+                                          <code>wait</code> |
+                                          <code>process</code> |
+                                          <code>finish</code> |
+                                          <code>error</code>
+                                    </td>
+                                    <td>String</td>
+                                    <td>process</td>
+                              </tr>
+                              <tr>
+                                    <td>title</td>
+                                    <td>标题</td>
+                                    <td>String</td>
+                                    <td>-</td>
+                              </tr>
+                              <tr>
+                                    <td>content</td>
+                                    <td>内容</td>
+                                    <td>String</td>
+                                    <td>-</td>
+                              </tr>
+                              <tr>
+                                    <td>icon</td>
+                                    <td>步骤图标</td>
+                                    <td>String</td>
+                                    <td>-</td>
+                              </tr>
+                              <tr>
+                                    <td>editable</td>
+                                    <td>当前步骤是否是否可以通过点击进行下一步</td>
+                                    <td>String</td>
+                                    <td>-</td>
+                              </tr>
+                        </tbody>
+                  </table>
+            </div>
       </div>
 </template>
 

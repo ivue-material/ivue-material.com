@@ -73,7 +73,7 @@ code.type = `
 
 
 
-code.duration  = `
+code.duration = `
 <template>
       <div>
             <IvueButton @click="open">Open notice</IvueButton>
@@ -122,6 +122,13 @@ code.render = `
             }
       }
 </script>
+`;
+
+
+code.config = `this.$IvueNotice.config({
+      top: 50,
+      duration: 3
+})
 `;
 
 export default code;

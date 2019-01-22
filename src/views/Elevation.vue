@@ -21,22 +21,25 @@
             </DocMarkdown>
             <h2>API</h2>
             <h3>class</h3>
-            <table>
-                  <thead>
-                        <tr>
-                              <th>名称</th>
-                              <th>说明</th>
-                        </tr>
-                  </thead>
-                  <tbody>
-                        <tr>
-                              <td>ivue-elevation-[size]</td>
-                              <td>向目标元素添加深度 ,大小可以是1到24.例如：
-                                    <code>ivue-elevation-4</code>
-                              </td>
-                        </tr>
-                  </tbody>
-            </table>
+            <div class="table">
+                  <table>
+                        <thead>
+                              <tr>
+                                    <th>名称</th>
+                                    <th>说明</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                    <td>ivue-elevation-[size]</td>
+                                    <td>
+                                          向目标元素添加深度 ,大小可以是1到24.例如：
+                                          <code>ivue-elevation-4</code>
+                                    </td>
+                              </tr>
+                        </tbody>
+                  </table>
+            </div>
       </div>
 </template>
 

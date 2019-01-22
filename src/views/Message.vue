@@ -93,48 +93,50 @@
                   参数
                   <code>config</code> 为对象，具体说明如下：
             </p>
-            <table>
-                  <thead>
-                        <tr>
-                              <th>属性</th>
-                              <th>说明</th>
-                              <th>类型</th>
-                              <th>默认值</th>
-                        </tr>
-                  </thead>
-                  <tbody>
-                        <tr>
-                              <td>content</td>
-                              <td>提示内容</td>
-                              <td>String</td>
-                              <td>-</td>
-                        </tr>
-                        <tr>
-                              <td>render</td>
-                              <td>自定义描述内容，使用 Vue 的 Render 函数</td>
-                              <td>Function</td>
-                              <td>-</td>
-                        </tr>
-                        <tr>
-                              <td>closable</td>
-                              <td>是否显示关闭按钮</td>
-                              <td>Boolean</td>
-                              <td>false</td>
-                        </tr>
-                        <tr>
-                              <td>duration</td>
-                              <td>自动关闭的延时，单位秒，不关闭可以写 0</td>
-                              <td>Number</td>
-                              <td>1.5</td>
-                        </tr>
-                        <tr>
-                              <td>onClose</td>
-                              <td>关闭时的回调</td>
-                              <td>Function</td>
-                              <td>-</td>
-                        </tr>
-                  </tbody>
-            </table>
+            <div class="table">
+                  <table>
+                        <thead>
+                              <tr>
+                                    <th>属性</th>
+                                    <th>说明</th>
+                                    <th>类型</th>
+                                    <th>默认值</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                    <td>content</td>
+                                    <td>提示内容</td>
+                                    <td>String</td>
+                                    <td>-</td>
+                              </tr>
+                              <tr>
+                                    <td>render</td>
+                                    <td>自定义描述内容，使用 Vue 的 Render 函数</td>
+                                    <td>Function</td>
+                                    <td>-</td>
+                              </tr>
+                              <tr>
+                                    <td>closable</td>
+                                    <td>是否显示关闭按钮</td>
+                                    <td>Boolean</td>
+                                    <td>false</td>
+                              </tr>
+                              <tr>
+                                    <td>duration</td>
+                                    <td>自动关闭的延时，单位秒，不关闭可以写 0</td>
+                                    <td>Number</td>
+                                    <td>1.5</td>
+                              </tr>
+                              <tr>
+                                    <td>onClose</td>
+                                    <td>关闭时的回调</td>
+                                    <td>Function</td>
+                                    <td>-</td>
+                              </tr>
+                        </tbody>
+                  </table>
+            </div>
             <br>
             <p>另外提供了全局配置和全局销毁的方法：</p>
             <ul>
@@ -145,31 +147,33 @@
                         <code>this.$IvueMessage.destroy()</code>
                   </li>
             </ul>
-            <pre><code ref="config">{{config}}</code></pre>
-            <table>
-                  <thead>
-                        <tr>
-                              <th>属性</th>
-                              <th>说明</th>
-                              <th>类型</th>
-                              <th>默认值</th>
-                        </tr>
-                  </thead>
-                  <tbody>
-                        <tr>
-                              <td>top</td>
-                              <td>通知组件距离顶端的距离，单位像素</td>
-                              <td>Number</td>
-                              <td>24</td>
-                        </tr>
-                        <tr>
-                              <td>duration</td>
-                              <td>默认自动关闭的延时，单位秒</td>
-                              <td>Number</td>
-                              <td>1.5</td>
-                        </tr>
-                  </tbody>
-            </table>
+            <pre><code ref="config">{{code.config}}</code></pre>
+            <div class="table">
+                  <table>
+                        <thead>
+                              <tr>
+                                    <th>属性</th>
+                                    <th>说明</th>
+                                    <th>类型</th>
+                                    <th>默认值</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                    <td>top</td>
+                                    <td>通知组件距离顶端的距离，单位像素</td>
+                                    <td>Number</td>
+                                    <td>24</td>
+                              </tr>
+                              <tr>
+                                    <td>duration</td>
+                                    <td>默认自动关闭的延时，单位秒</td>
+                                    <td>Number</td>
+                                    <td>1.5</td>
+                              </tr>
+                        </tbody>
+                  </table>
+            </div>
       </div>
 </template>
 
@@ -190,11 +194,7 @@ export default {
       name: 'ivue-message',
       data () {
             return {
-                  code: Code,
-                  config: `this.$IvueMessage.config({
-    top: 50,
-    duration: 3
-});`
+                  code: Code
             }
       },
       mounted () {

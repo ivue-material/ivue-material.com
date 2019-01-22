@@ -84,161 +84,167 @@
             </DocMarkdown>
             <h2>API</h2>
             <h3>props</h3>
-            <table>
-                  <thead>
-                        <tr>
-                              <th>属性</th>
-                              <th>说明</th>
-                              <th>类型</th>
-                              <th>默认值</th>
-                        </tr>
-                  </thead>
-                  <tbody>
-                        <tr>
-                              <td>value</td>
-                              <td>
-                                    指定选中选项的
-                                    <code>value</code>值，可以使用
-                                    <code>v-modul</code>双向绑定数据。单项选择只接受
-                                    <code>String</code>和
-                                    <code>Number</code>,多选时只接受
-                                    <code>Array</code>
-                              </td>
-                              <td>String | Number | Array</td>
-                              <td>-</td>
-                        </tr>
-                        <tr>
-                              <td>multiple</td>
-                              <td>是否开启多选</td>
-                              <td>Boolean</td>
-                              <td>false</td>
-                        </tr>
-                        <tr>
-                              <td>label-and-value</td>
-                              <td>在返回选项时，是否将label和value一起返回，默认只返回 value</td>
-                              <td>Boolean</td>
-                              <td>false</td>
-                        </tr>
-                        <tr>
-                              <td>disabled</td>
-                              <td>是否禁用该组件</td>
-                              <td>Boolean</td>
-                              <td>false</td>
-                        </tr>
-                        <tr>
-                              <td>clearable</td>
-                              <td>是否可以清空选项，只在单选时有效</td>
-                              <td>Boolean</td>
-                              <td>false</td>
-                        </tr>
-                        <tr>
-                              <td>not-find-text</td>
-                              <td>选项列表没有找到数据时的提示</td>
-                              <td>String</td>
-                              <td>无匹配数据</td>
-                        </tr>
-                        <tr>
-                              <td>filterable</td>
-                              <td>是否开启搜索</td>
-                              <td>Boolean</td>
-                              <td>false</td>
-                        </tr>
-                        <tr>
-                              <td>arrow-down-icon</td>
-                              <td>
-                                    下拉选项图标,通常与图标库
-                                    <a
-                                          target="_blank"
-                                          href="https://material.io/tools/icons/?icon=keyboard_arrow_left&amp;style=baseline"
-                                    >material.io</a> 一起使用
-                              </td>
-                              <td>String</td>
-                              <td>keyboard_arrow_down</td>
-                        </tr>
-                        <tr>
-                              <td>reset-select-icon</td>
-                              <td>
-                                    重置选择选项图标,通常与图标库
-                                    <a
-                                          target="_blank"
-                                          href="https://material.io/tools/icons/?icon=keyboard_arrow_left&amp;style=baseline"
-                                    >material.io</a> 一起使用
-                              </td>
-                              <td>String</td>
-                              <td>cancel</td>
-                        </tr>
-                        <tr>
-                              <td>multiple-close-icon</td>
-                              <td>
-                                    多项选择选项关闭图标,通常与图标库
-                                    <a
-                                          target="_blank"
-                                          href="https://material.io/tools/icons/?icon=keyboard_arrow_left&amp;style=baseline"
-                                    >material.io</a> 一起使用
-                              </td>
-                              <td>String</td>
-                              <td>close</td>
-                        </tr>
-                  </tbody>
-            </table>
+            <div class="table">
+                  <table>
+                        <thead>
+                              <tr>
+                                    <th>属性</th>
+                                    <th>说明</th>
+                                    <th>类型</th>
+                                    <th>默认值</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                    <td>value</td>
+                                    <td>
+                                          指定选中选项的
+                                          <code>value</code>值，可以使用
+                                          <code>v-modul</code>双向绑定数据。单项选择只接受
+                                          <code>String</code>和
+                                          <code>Number</code>,多选时只接受
+                                          <code>Array</code>
+                                    </td>
+                                    <td>String | Number | Array</td>
+                                    <td>-</td>
+                              </tr>
+                              <tr>
+                                    <td>multiple</td>
+                                    <td>是否开启多选</td>
+                                    <td>Boolean</td>
+                                    <td>false</td>
+                              </tr>
+                              <tr>
+                                    <td>label-and-value</td>
+                                    <td>在返回选项时，是否将label和value一起返回，默认只返回 value</td>
+                                    <td>Boolean</td>
+                                    <td>false</td>
+                              </tr>
+                              <tr>
+                                    <td>disabled</td>
+                                    <td>是否禁用该组件</td>
+                                    <td>Boolean</td>
+                                    <td>false</td>
+                              </tr>
+                              <tr>
+                                    <td>clearable</td>
+                                    <td>是否可以清空选项，只在单选时有效</td>
+                                    <td>Boolean</td>
+                                    <td>false</td>
+                              </tr>
+                              <tr>
+                                    <td>not-find-text</td>
+                                    <td>选项列表没有找到数据时的提示</td>
+                                    <td>String</td>
+                                    <td>无匹配数据</td>
+                              </tr>
+                              <tr>
+                                    <td>filterable</td>
+                                    <td>是否开启搜索</td>
+                                    <td>Boolean</td>
+                                    <td>false</td>
+                              </tr>
+                              <tr>
+                                    <td>arrow-down-icon</td>
+                                    <td>
+                                          下拉选项图标,通常与图标库
+                                          <a
+                                                target="_blank"
+                                                href="https://material.io/tools/icons/?icon=keyboard_arrow_left&amp;style=baseline"
+                                          >material.io</a> 一起使用
+                                    </td>
+                                    <td>String</td>
+                                    <td>keyboard_arrow_down</td>
+                              </tr>
+                              <tr>
+                                    <td>reset-select-icon</td>
+                                    <td>
+                                          重置选择选项图标,通常与图标库
+                                          <a
+                                                target="_blank"
+                                                href="https://material.io/tools/icons/?icon=keyboard_arrow_left&amp;style=baseline"
+                                          >material.io</a> 一起使用
+                                    </td>
+                                    <td>String</td>
+                                    <td>cancel</td>
+                              </tr>
+                              <tr>
+                                    <td>multiple-close-icon</td>
+                                    <td>
+                                          多项选择选项关闭图标,通常与图标库
+                                          <a
+                                                target="_blank"
+                                                href="https://material.io/tools/icons/?icon=keyboard_arrow_left&amp;style=baseline"
+                                          >material.io</a> 一起使用
+                                    </td>
+                                    <td>String</td>
+                                    <td>close</td>
+                              </tr>
+                        </tbody>
+                  </table>
+            </div>
             <h2>ivue-option</h2>
             <h3>props</h3>
-            <table>
-                  <thead>
-                        <tr>
-                              <th>属性</th>
-                              <th>说明</th>
-                              <th>类型</th>
-                              <th>默认值</th>
-                        </tr>
-                  </thead>
-                  <tbody>
-                        <tr>
-                              <td>disabled-ripple</td>
-                              <td>启用/禁用涟漪</td>
-                              <td>Booelan</td>
-                              <td>true</td>
-                        </tr>
-                        <tr>
-                              <td>value</td>
-                              <td>选项值，默认根据此属性值进行筛选，必填</td>
-                              <td>String | Number</td>
-                              <td>-</td>
-                        </tr>
-                        <tr>
-                              <td>label</td>
-                              <td>选择显示的内容，默认会读取 slot,无 slot 时，优先读取该 label 的值,无 label 时，读取 value。</td>
-                              <td>String | Number</td>
-                              <td>-</td>
-                        </tr>
-                        <tr>
-                              <td>disabled</td>
-                              <td>是否禁用当前选项</td>
-                              <td>Boolean</td>
-                              <td>false</td>
-                        </tr>
-                  </tbody>
-            </table>
+            <div class="table">
+                  <table>
+                        <thead>
+                              <tr>
+                                    <th>属性</th>
+                                    <th>说明</th>
+                                    <th>类型</th>
+                                    <th>默认值</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                    <td>disabled-ripple</td>
+                                    <td>启用/禁用涟漪</td>
+                                    <td>Booelan</td>
+                                    <td>true</td>
+                              </tr>
+                              <tr>
+                                    <td>value</td>
+                                    <td>选项值，默认根据此属性值进行筛选，必填</td>
+                                    <td>String | Number</td>
+                                    <td>-</td>
+                              </tr>
+                              <tr>
+                                    <td>label</td>
+                                    <td>选择显示的内容，默认会读取 slot,无 slot 时，优先读取该 label 的值,无 label 时，读取 value。</td>
+                                    <td>String | Number</td>
+                                    <td>-</td>
+                              </tr>
+                              <tr>
+                                    <td>disabled</td>
+                                    <td>是否禁用当前选项</td>
+                                    <td>Boolean</td>
+                                    <td>false</td>
+                              </tr>
+                        </tbody>
+                  </table>
+            </div>
             <h2>ivue-option-group</h2>
             <h3>props</h3>
-            <table>
-                  <thead>
-                        <tr>
-                              <th>属性</th>
-                              <th >说明</th>
-                              <th >类型</th>
-                              <th >默认值</th>
-                        </tr>
-                  </thead>
-                  <tbody>
-                        <tr>
-                              <td>label</td>
-                              <td >分组的组名</td>
-                              <td >String</td>
-                              <td >-</td>
-                        </tr>
-                  </tbody>
-            </table>
+            <div class="table">
+                  <table>
+                        <thead>
+                              <tr>
+                                    <th>属性</th>
+                                    <th>说明</th>
+                                    <th>类型</th>
+                                    <th>默认值</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                    <td>label</td>
+                                    <td>分组的组名</td>
+                                    <td>String</td>
+                                    <td>-</td>
+                              </tr>
+                        </tbody>
+                  </table>
+            </div>
       </div>
 </template>
 

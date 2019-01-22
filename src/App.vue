@@ -2,11 +2,12 @@
       <div id="app">
             <div class="app-header">
                   <div class="app-header-wrapper">
-                        <div class="app-header-img">
-                              <img src="./assets/logo.png">
-                              <p class="text">IVue</p>
-                        </div>
-
+                        <router-link to="/">
+                              <div class="app-header-img">
+                                    <img src="./assets/logo.png">
+                                    <p class="text">IVue</p>
+                              </div>
+                        </router-link>
                         <div class="app-header-github">
                               <a target="_blank" href="https://github.com/qq282126990/ivue-ui">
                                     <svg
@@ -26,41 +27,9 @@
                         </div>
                   </div>
             </div>
-            <div class="app-content">
-                  <div class="app-content-left">
-                        <ul class="router-lists">
-                              <li v-for="item in routers" :key="item.name" class="router-lists-li">
-                                    <router-link
-                                          :to="item.router"
-                                          v-if="item.router"
-                                          class="router-lists-item"
-                                    >{{item.name}}</router-link>
-                                    <div v-else>
-                                          <p class="router-lists--child-header">{{item.name}}</p>
-                                          <div
-                                                v-if="item.child.length > 0"
-                                                v-for="child in item.child"
-                                                :key="child.name"
-                                                class="router-lists--child-group"
-                                          >
-                                                <p class="router-lists--child">{{child.name}}</p>
-                                                <ul>
-                                                      <router-link
-                                                            v-for="menu in child.menu"
-                                                            :to="menu.router"
-                                                            :key="menu.name"
-                                                            class="router-lists--child-item"
-                                                      >{{menu.name}}</router-link>
-                                                </ul>
-                                          </div>
-                                    </div>
-                              </li>
-                        </ul>
-                  </div>
-                  <div class="app-content-right">
-                        <router-view/>
-                  </div>
-            </div>
+            <transition name="transition-fade">
+                  <router-view/>
+            </transition>
       </div>
 </template>
 
@@ -233,7 +202,7 @@ export default {
       -moz-osx-font-smoothing: grayscale;
       text-align: center;
 
-      height: 500px;
+      height: 100%;
       display: flex;
       flex-direction: column;
       background-color: #f5f5f5;
@@ -289,15 +258,8 @@ export default {
             color: black;
       }
 
-      iframe {
-            border-radius: 5px;
-            background: url("./assets/loading.gif") no-repeat;
-            background-size: cover;
-            background-position: center;
-      }
-
       code {
-            background-color: #f3f5f6;
+            // background-color: #f3f5f6;
       }
 
       .router-link-active {
@@ -339,115 +301,14 @@ export default {
             }
             z-index: 100;
       }
+}
 
-      /*内容*/
-      &-content {
-            position: relative;
-            margin-top: 60px;
-            height: auto;
-            zoom: 1;
-            display: block;
-            z-index: 50;
-            background-color: #fff;
-            /*左*/
-            &-left {
-                  position: relative;
-                  display: block;
-                  padding: 24px 26px;
-                  width: 16.66666667%;
-                  float: left;
-                  flex: 0 0 auto;
-                  box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
-                  border-right: 1px solid #e4e7e9;
-                  overflow: hidden;
-                  text-overflow: ellipsis;
-                  white-space: nowrap;
-                  font-size: 14px;
-                  .router-lists {
-                        display: flex;
-                        flex-direction: column;
-                        margin: 0;
-                        &-li {
-                              display: block;
-                              flex: 1;
-                              margin-bottom: 8px;
-                              text-align: left;
-                              color: #7f8c8d;
-                              min-height: 40px;
-                        }
-                        &-item {
-                              display: block;
-                              flex: 1;
-                              text-align: left;
-                              font-weight: 500;
-                              color: #7f8c8d;
-                              line-height: 40px;
-                              cursor: pointer;
-                              transition: color 0.5s;
-                              &:hover {
-                                    color: #2d8cf0;
-                              }
-                        }
-                        &--child-header {
-                              font-size: 16px;
-                              line-height: 40px;
-                        }
-                        &--child-group {
-                              line-height: normal;
-                              ul {
-                                    margin-left: 15px;
-                              }
-                        }
-                        &--child {
-                              padding-left: 8px;
-                              font-weight: initial;
-                              font-size: 14px;
-                              line-height: 40px;
-                              &-item {
-                                    display: block;
-                                    overflow: hidden;
-                                    text-overflow: ellipsis;
-                                    white-space: nowrap;
-                                    list-style: none;
-                                    font-size: 14px;
-                                    font-weight: normal;
-                                    color: inherit;
-                                    line-height: 40px;
-                              }
-                        }
-                  }
-            }
-            /*右*/
-            &-right {
-                  position: relative;
-                  text-align: left;
-                  padding: 20px 20px 100px 20px;
-                  float: left;
-                  flex: 0 0 auto;
-                  display: block;
-                  width: 83.33333333%;
-                  p {
-                        margin: 5px;
-                  }
-                  table {
-                        width: 100%;
-                        table-layout: auto;
-                        border-collapse: collapse;
-                        border-spacing: 0;
-                        font-size: 13px;
-                        line-height: 18px;
-                  }
-                  thead {
-                        background-color: #eee;
-                  }
-                  th,
-                  td {
-                        padding: 8px 16px;
-                        border: 1px solid #e0e0e0;
-                        text-align: left;
-                        vertical-align: middle;
-                  }
-            }
-      }
+.transition-fade-enter-active,
+.transition-fade-leave-active {
+      transition: opacity 0.3s;
+}
+.transition-fade-enter,
+.transition-fade-leave-to {
+      opacity: 0;
 }
 </style>

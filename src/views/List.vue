@@ -56,28 +56,30 @@
             </DocMarkdown>
             <h2>API</h2>
             <h3>props</h3>
-            <table>
-                  <thead>
-                        <tr>
-                              <th>名称</th>
-                              <th>说明</th>
-                              <th>类型</th>
-                              <th>默认</th>
-                        </tr>
-                  </thead>
-                  <tbody>
-                        <tr>
-                              <td>ivue-expand-single</td>
-                              <td>
-                                    如果设置为 true ，则一次最多可扩展一个扩展列表项。扩展后的列表将在展开另一个列表时折叠，前提是
-                                    <code>ivue-list-item</code> 开启了
-                                    <code>ivue-expand</code>
-                              </td>
-                              <td>Boolean</td>
-                              <td>false</td>
-                        </tr>
-                  </tbody>
-            </table>
+            <div class="table">
+                  <table>
+                        <thead>
+                              <tr>
+                                    <th>名称</th>
+                                    <th>说明</th>
+                                    <th>类型</th>
+                                    <th>默认</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                    <td>ivue-expand-single</td>
+                                    <td>
+                                          如果设置为 true ，则一次最多可扩展一个扩展列表项。扩展后的列表将在展开另一个列表时折叠，前提是
+                                          <code>ivue-list-item</code> 开启了
+                                          <code>ivue-expand</code>
+                                    </td>
+                                    <td>Boolean</td>
+                                    <td>false</td>
+                              </tr>
+                        </tbody>
+                  </table>
+            </div>
             <h2>ivue-list-item 列表项</h2>
             <p>列表项将根据给定的交互类型呈现不同的标记。</p>
             <p>如果您传递其中一个事件，该项目将自动呈现 button ：</p>
@@ -96,33 +98,35 @@
                   <code>a</code>标签。
             </p>
             <h3>props</h3>
-            <table>
-                  <thead>
-                        <tr>
-                              <th>名称</th>
-                              <th>说明</th>
-                              <th>类型</th>
-                              <th>默认</th>
-                        </tr>
-                  </thead>
-                  <tbody>
-                        <tr>
-                              <td>ivue-expand</td>
-                              <td>启用扩展面板</td>
-                              <td>Boolean</td>
-                              <td>false</td>
-                        </tr>
-                        <tr>
-                              <td>ivue-expanded</td>
-                              <td>
-                                    显示/隐藏扩展面板的道具。应与
-                                    <code>.sync</code>修饰符一起使用
-                              </td>
-                              <td>Boolean</td>
-                              <td>false</td>
-                        </tr>
-                  </tbody>
-            </table>
+            <div class="table">
+                  <table>
+                        <thead>
+                              <tr>
+                                    <th>名称</th>
+                                    <th>说明</th>
+                                    <th>类型</th>
+                                    <th>默认</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                    <td>ivue-expand</td>
+                                    <td>启用扩展面板</td>
+                                    <td>Boolean</td>
+                                    <td>false</td>
+                              </tr>
+                              <tr>
+                                    <td>ivue-expanded</td>
+                                    <td>
+                                          显示/隐藏扩展面板的道具。应与
+                                          <code>.sync</code>修饰符一起使用
+                                    </td>
+                                    <td>Boolean</td>
+                                    <td>false</td>
+                              </tr>
+                        </tbody>
+                  </table>
+            </div>
       </div>
 </template>
 

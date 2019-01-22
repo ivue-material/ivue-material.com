@@ -4,52 +4,54 @@
             <p>响应式布局适应任何可能的屏幕尺寸。此UI指南包括一个灵活的网格，可确保布局之间的一致性，有关内容如何在不同屏幕上回流的断点详细信息，以及应用程序如何从小屏幕扩展到超大屏幕的说明。</p>
             <p>默认情况下，您可以创建无装饰布局或使网格系统计算每个屏幕大小的最佳边距大小。</p>
             <p>布局系统使用行和列的概念。您可以创建大小的列。您将能够为每个列设置大小，即使在嵌套列上也是如此。</p>
-            <table>
-                  <thead>
-                        <tr>
-                              <th>名称</th>
-                              <th>说明</th>
-                              <th>size</th>
-                        </tr>
-                  </thead>
-                  <tbody>
-                        <tr>
-                              <td>xsmall</td>
-                              <td>适用于宽度最大为600px的屏幕。适用于肖像中的小型，中型和大型手机</td>
-                              <td>
-                                    <strong>&lt;600px</strong>
-                              </td>
-                        </tr>
-                        <tr>
-                              <td>small</td>
-                              <td>适用于宽度介于600px和960px之间的屏幕</td>
-                              <td>
-                                    <strong>960px</strong>
-                              </td>
-                        </tr>
-                        <tr>
-                              <td>medium</td>
-                              <td>适用于宽度介于960px和1280px之间的屏幕</td>
-                              <td>
-                                    <strong>1280px</strong>
-                              </td>
-                        </tr>
-                        <tr>
-                              <td>large</td>
-                              <td>适用于宽度介于1280像素到1920像素之间的屏幕</td>
-                              <td>
-                                    <strong>1920px</strong>
-                              </td>
-                        </tr>
-                        <tr>
-                              <td>xlarge</td>
-                              <td>适用于宽度超过1920px的屏幕</td>
-                              <td>
-                                    <strong>&gt;1920px</strong>
-                              </td>
-                        </tr>
-                  </tbody>
-            </table>
+            <div class="table">
+                  <table>
+                        <thead>
+                              <tr>
+                                    <th>名称</th>
+                                    <th>说明</th>
+                                    <th>size</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                    <td>xsmall</td>
+                                    <td>适用于宽度最大为600px的屏幕。适用于肖像中的小型，中型和大型手机</td>
+                                    <td>
+                                          <strong>&lt;600px</strong>
+                                    </td>
+                              </tr>
+                              <tr>
+                                    <td>small</td>
+                                    <td>适用于宽度介于600px和960px之间的屏幕</td>
+                                    <td>
+                                          <strong>960px</strong>
+                                    </td>
+                              </tr>
+                              <tr>
+                                    <td>medium</td>
+                                    <td>适用于宽度介于960px和1280px之间的屏幕</td>
+                                    <td>
+                                          <strong>1280px</strong>
+                                    </td>
+                              </tr>
+                              <tr>
+                                    <td>large</td>
+                                    <td>适用于宽度介于1280像素到1920像素之间的屏幕</td>
+                                    <td>
+                                          <strong>1920px</strong>
+                                    </td>
+                              </tr>
+                              <tr>
+                                    <td>xlarge</td>
+                                    <td>适用于宽度超过1920px的屏幕</td>
+                                    <td>
+                                          <strong>&gt;1920px</strong>
+                                    </td>
+                              </tr>
+                        </tbody>
+                  </table>
+            </div>
             <h2>列布局</h2>
             <p>
                   要开始使用布局，您需要做的是创建一个
@@ -57,32 +59,34 @@
                   <code>ivue-layout-item</code> 。您可以设置所需的列数：
             </p>
             <br>
-            <table>
-                  <thead>
-                        <tr>
-                              <th>屏幕尺寸</th>
-                              <th>间隔</th>
-                        </tr>
-                  </thead>
-                  <tbody>
-                        <tr>
-                              <td>xsmall</td>
-                              <td>8px</td>
-                        </tr>
-                        <tr>
-                              <td>small</td>
-                              <td>16px</td>
-                        </tr>
-                        <tr>
-                              <td>medium</td>
-                              <td>24px</td>
-                        </tr>
-                        <tr>
-                              <td>large</td>
-                              <td>48px</td>
-                        </tr>
-                  </tbody>
-            </table>
+            <div class="table">
+                  <table>
+                        <thead>
+                              <tr>
+                                    <th>屏幕尺寸</th>
+                                    <th>间隔</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                    <td>xsmall</td>
+                                    <td>8px</td>
+                              </tr>
+                              <tr>
+                                    <td>small</td>
+                                    <td>16px</td>
+                              </tr>
+                              <tr>
+                                    <td>medium</td>
+                                    <td>24px</td>
+                              </tr>
+                              <tr>
+                                    <td>large</td>
+                                    <td>48px</td>
+                              </tr>
+                        </tbody>
+                  </table>
+            </div>
             <br>
             <DocMarkdown
                   :code="code.base"
@@ -174,89 +178,93 @@
             <h3>ivue-layout</h3>
             <h4>class</h4>
             <p>以下类可以应用于任何HTML元素：</p>
-            <table>
-                  <thead>
-                        <tr>
-                              <th>名称</th>
-                              <th>说明</th>
-                        </tr>
-                  </thead>
-                  <tbody>
-                        <tr>
-                              <td>ivue-gutter</td>
-                              <td>在布局项之间启用自动装订线空间</td>
-                        </tr>
-                        <tr>
-                              <td>ivue-layout-nowrap</td>
-                              <td>默认情况下，布局项将始终包装在父布局下。如果要禁用此行为，请使用此类，但响应性将不起作用</td>
-                        </tr>
-                        <tr>
-                              <td>ivue-alignment-[x]-[y]</td>
-                              <td>
-                                    根据每个坐标的值设置所有子项的对齐方式。只有当x和y都存在时，对齐才有效如：
-                                    <code>ivue-alignment-top-center</code>。可能的值是：
-                                    <code>top</code> |
-                                    <code>center</code> |
-                                    <code>left</code> |
-                                    <code>space-around</code> |
-                                    <code>space-between</code> |
-                              </td>
-                        </tr>
-                  </tbody>
-            </table>
+            <div class="table">
+                  <table>
+                        <thead>
+                              <tr>
+                                    <th>名称</th>
+                                    <th>说明</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                    <td>ivue-gutter</td>
+                                    <td>在布局项之间启用自动装订线空间</td>
+                              </tr>
+                              <tr>
+                                    <td>ivue-layout-nowrap</td>
+                                    <td>默认情况下，布局项将始终包装在父布局下。如果要禁用此行为，请使用此类，但响应性将不起作用</td>
+                              </tr>
+                              <tr>
+                                    <td>ivue-alignment-[x]-[y]</td>
+                                    <td>
+                                          根据每个坐标的值设置所有子项的对齐方式。只有当x和y都存在时，对齐才有效如：
+                                          <code>ivue-alignment-top-center</code>。可能的值是：
+                                          <code>top</code> |
+                                          <code>center</code> |
+                                          <code>left</code> |
+                                          <code>space-around</code> |
+                                          <code>space-between</code> |
+                                    </td>
+                              </tr>
+                        </tbody>
+                  </table>
+            </div>
             <h3>ivue-layout-item</h3>
             <h4>class</h4>
-            <table>
-                  <thead>
-                        <tr>
-                              <th>名称</th>
-                              <th>说明</th>
-                        </tr>
-                  </thead>
-                  <tbody>
-                        <tr>
-                              <td>ivue-size-[amount]</td>
-                              <td
-                                   
-                              >设置特定item的大小。数量可以是五的倍数， 例如ivue-size-25。还可以接受33,66和100以便于原型设计</td>
-                        </tr>
-                        <tr>
-                              <td>ivue-[breakpoint]-size-[amount]</td>
-                              <td>
-                                    将大小设置为特定 breakpoint 上的特定项。可能的值是：
-                                    <code>xsmall</code> |
-                                    <code>small</code> |
-                                    <code>medium</code> |
-                                    <code>large</code> |
-                                    <code>xlarge</code> |
-                              </td>
-                        </tr>
-                  </tbody>
-            </table>
+            <div class="table">
+                  <table>
+                        <thead>
+                              <tr>
+                                    <th>名称</th>
+                                    <th>说明</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                    <td>ivue-size-[amount]</td>
+                                    <td>设置特定item的大小。数量可以是五的倍数， 例如ivue-size-25。还可以接受33,66和100以便于原型设计</td>
+                              </tr>
+                              <tr>
+                                    <td>ivue-[breakpoint]-size-[amount]</td>
+                                    <td>
+                                          将大小设置为特定 breakpoint 上的特定项。可能的值是：
+                                          <code>xsmall</code> |
+                                          <code>small</code> |
+                                          <code>medium</code> |
+                                          <code>large</code> |
+                                          <code>xlarge</code> |
+                                    </td>
+                              </tr>
+                        </tbody>
+                  </table>
+            </div>
             <h3>ivue-hide</h3>
             <h4>class</h4>
             <p>以下类可以应用于任何HTML元素：</p>
-            <table>
-                  <thead>
-                        <tr>
-                              <th>名称</th>
-                              <th>说明</th>
-                        </tr>
-                  </thead>
-                  <tbody>
-                        <tr>
-                              <td>ivue-[breakpoint]-hide</td>
-                              <td>
-                                    隐藏特定断点上的特定元素。可能的值是：
-                                    <code>xsmall</code> |
-                                    <code>small</code> |
-                                    <code>medium</code> |
-                                    <code>large</code> |
-                                    <code>xlarge</code>
-                              </td>
-                        </tr>
-                  </tbody>
-            </table>
+            <div class="table">
+                  <table>
+                        <thead>
+                              <tr>
+                                    <th>名称</th>
+                                    <th>说明</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                    <td>ivue-[breakpoint]-hide</td>
+                                    <td>
+                                          隐藏特定断点上的特定元素。可能的值是：
+                                          <code>xsmall</code> |
+                                          <code>small</code> |
+                                          <code>medium</code> |
+                                          <code>large</code> |
+                                          <code>xlarge</code>
+                                    </td>
+                              </tr>
+                        </tbody>
+                  </table>
+            </div>
       </div>
 </template>
 

@@ -1,6 +1,39 @@
 <template>
       <div>
-            <div v-highlight v-html="ColorMdContent"></div>
+            <h1>Color 色彩</h1>
+            <p>
+                  所有包含在
+                  <a
+                        target="_blank"
+                        href="https://material.io/design/color/#tools-for-picking-colors"
+                  >Material Design 规范</a>中的所有色彩都可以通过
+                  <code>stylus</code> 得到应用。
+                  这些值可以在您的样式表、组建文件和实际组件中通过color类 中使用。
+            </p>
+            <h2>类</h2>
+            <p>
+                  规范中的每种色彩都会被转换为背景和文本颜色以便在应用程序中通过一个类进行样式化，比如：
+                  <code>&lt;div class="red"&gt;</code> 或者
+                  <code>&lt;span class="red--text"&gt;</code> 。这些类的色彩定义在
+                  <a
+                        target="_blank"
+                        href="https://github.com/qq282126990/ivue-ui/blob/master/src/styles/theme/color.scss"
+                  >这里</a>。
+            </p>
+            <DocMarkdown
+                  :code="code.base"
+                  jsfiddle="//jsfiddle.net/qq282126990/6kzt3rg5/"
+                  github="//github.com/qq282126990/ivue.com/blob/master/src/views/components/color/Default.vue"
+            >
+                  <Default slot="demo"></Default>
+            </DocMarkdown>
+            <h2>引入颜色包</h2>
+            <p>通常在
+                  <code>webpack</code> 入口页面
+                  <code>main.js</code> 中如下配置：
+            </p>
+            <pre><code ref="main">{{code.main}}</code></pre>
+            <br>
             <div class="ivue-layout ivue-gutter ivue-alignment-left response">
                   <div
                         class="ivue-layout-item ivue-medium-size-33 ivue-small-size-50 ivue-xsmall-size-100"
@@ -21,12 +54,18 @@
 </template>
 
 <script>
-import ColorMd from '../markdown/Color.md';
+import Hljs from 'highlight.js';
+
+import DocMarkdown from '@/components/DocMarkdown';
+import Code from '@/code/color';
+
+import Default from './components/color/Default.vue';
 
 export default {
       name: 'color',
       data () {
             return {
+                  code: Code,
                   colorMaterial: [
                         [
                               {
@@ -1108,10 +1147,12 @@ export default {
                   ]
             }
       },
-      computed: {
-            ColorMdContent () {
-                  return ColorMd;
-            }
+      mounted () {
+            Hljs.highlightBlock(this.$refs.main);
+      },
+      components: {
+            DocMarkdown,
+            Default
       }
 }
 </script>

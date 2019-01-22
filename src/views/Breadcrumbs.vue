@@ -50,165 +50,173 @@
             </DocMarkdown>
             <h2>API</h2>
             <h3>props</h3>
-            <table>
-                  <thead>
-                        <tr>
-                              <th>属性</th>
-                              <th>说明</th>
-                              <th>类型</th>
-                              <th>默认值</th>
-                        </tr>
-                  </thead>
-                  <tbody>
-                        <tr>
-                              <td>divider</td>
-                              <td>分隔符</td>
-                              <td>String</td>
-                              <td>/</td>
-                        </tr>
-                        <tr>
-                              <td>justify-center</td>
-                              <td>中间对齐面包屑</td>
-                              <td>Boolean</td>
-                              <td>-</td>
-                        </tr>
-                        <tr>
-                              <td>justify-end</td>
-                              <td>尾部对齐面包屑</td>
-                              <td>Boolean</td>
-                              <td>-</td>
-                        </tr>
-                  </tbody>
-            </table>
+            <div class="table">
+                  <table>
+                        <thead>
+                              <tr>
+                                    <th>属性</th>
+                                    <th>说明</th>
+                                    <th>类型</th>
+                                    <th>默认值</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                    <td>divider</td>
+                                    <td>分隔符</td>
+                                    <td>String</td>
+                                    <td>/</td>
+                              </tr>
+                              <tr>
+                                    <td>justify-center</td>
+                                    <td>中间对齐面包屑</td>
+                                    <td>Boolean</td>
+                                    <td>-</td>
+                              </tr>
+                              <tr>
+                                    <td>justify-end</td>
+                                    <td>尾部对齐面包屑</td>
+                                    <td>Boolean</td>
+                                    <td>-</td>
+                              </tr>
+                        </tbody>
+                  </table>
+            </div>
             <h3>slots</h3>
-            <table>
-                  <thead>
-                        <tr>
-                              <th>属性</th>
-                              <th>说明</th>
-                        </tr>
-                  </thead>
-                  <tbody>
-                        <tr>
-                              <td>default</td>
-                              <td>Vue默认原生插槽</td>
-                        </tr>
-                  </tbody>
-            </table>
-            <h2>ivue-breadcrumbs-item 面包屑子项</h2>
+            <div class="table">
+                  <table>
+                        <thead>
+                              <tr>
+                                    <th>属性</th>
+                                    <th>说明</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                    <td>default</td>
+                                    <td>Vue默认原生插槽</td>
+                              </tr>
+                        </tbody>
+                  </table>
+            </div>
+            <h2>ivue-breadcrumbs-item</h2>
             <h3>props</h3>
-            <table>
-                  <thead>
-                        <tr>
-                              <th>属性</th>
-                              <th>说明</th>
-                              <th>类型</th>
-                              <th>默认值</th>
-                        </tr>
-                  </thead>
-                  <tbody>
-                        <tr>
-                              <td>disabled</td>
-                              <td>当前面包屑是否处于禁用状态</td>
-                              <td>Boolean</td>
-                              <td>false</td>
-                        </tr>
-                        <tr>
-                              <td>tag</td>
-                              <td>
-                                    <code>ivue-breadcrumbs-item</code> 渲染的标签tag
-                              </td>
-                              <td>String</td>
-                              <td>a</td>
-                        </tr>
-                        <tr>
-                              <td>to</td>
-                              <td>
-                                    <code>vue-router</code> 导航
-                              </td>
-                              <td>String,Object</td>
-                              <td>-</td>
-                        </tr>
-                        <tr>
-                              <td>href</td>
-                              <td>
-                                    <code>a</code>标签链接跳转
-                              </td>
-                              <td>String,Object</td>
-                              <td>-</td>
-                        </tr>
-                        <tr>
-                              <td>target</td>
-                              <td>
-                                    用于设置
-                                    <code>a</code> 链接的
-                                    <code>target</code> 属性
-                              </td>
-                              <td>String</td>
-                              <td>_self</td>
-                        </tr>
-                        <tr>
-                              <td>replace</td>
-                              <td>
-                                    调用
-                                    <code>router.replace()</code>
-                              </td>
-                              <td>Boolean</td>
-                              <td>-</td>
-                        </tr>
-                        <tr>
-                              <td>nuxt</td>
-                              <td>启用nuxt.js的导航 (前提是使用了nuxt.js )</td>
-                              <td>Boolean</td>
-                              <td>-</td>
-                        </tr>
-                        <tr>
-                              <td>exact-active-class</td>
-                              <td>
-                                    当链接被精确匹配的时候应该激活的
-                                    <code>class</code>
-                              </td>
-                              <td>String</td>
-                              <td>-</td>
-                        </tr>
-                        <tr>
-                              <td>append</td>
-                              <td>在当前 (相对) 路径前添加基路径</td>
-                              <td>Boolean</td>
-                              <td>-</td>
-                        </tr>
-                        <tr>
-                              <td>active-class</td>
-                              <td>链接激活时使用的 CSS 类名</td>
-                              <td>String</td>
-                              <td>-</td>
-                        </tr>
-                        <tr>
-                              <td>exact</td>
-                              <td>
-                                    "是否激活" 默认类名的依据是 inclusive match (全包含匹配)。 举个例子，如果当前的路径是 /a 开头的，那么
-                                    <code>&lt;router-link to="/a"&gt;</code> 也会被设置 CSS 类名。
-                              </td>
-                              <td>Boolean</td>
-                              <td>-</td>
-                        </tr>
-                  </tbody>
-            </table>
+            <div class="table">
+                  <table>
+                        <thead>
+                              <tr>
+                                    <th>属性</th>
+                                    <th>说明</th>
+                                    <th>类型</th>
+                                    <th>默认值</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                    <td>disabled</td>
+                                    <td>当前面包屑是否处于禁用状态</td>
+                                    <td>Boolean</td>
+                                    <td>false</td>
+                              </tr>
+                              <tr>
+                                    <td>tag</td>
+                                    <td>
+                                          <code>ivue-breadcrumbs-item</code> 渲染的标签tag
+                                    </td>
+                                    <td>String</td>
+                                    <td>a</td>
+                              </tr>
+                              <tr>
+                                    <td>to</td>
+                                    <td>
+                                          <code>vue-router</code> 导航
+                                    </td>
+                                    <td>String,Object</td>
+                                    <td>-</td>
+                              </tr>
+                              <tr>
+                                    <td>href</td>
+                                    <td>
+                                          <code>a</code>标签链接跳转
+                                    </td>
+                                    <td>String,Object</td>
+                                    <td>-</td>
+                              </tr>
+                              <tr>
+                                    <td>target</td>
+                                    <td>
+                                          用于设置
+                                          <code>a</code> 链接的
+                                          <code>target</code> 属性
+                                    </td>
+                                    <td>String</td>
+                                    <td>_self</td>
+                              </tr>
+                              <tr>
+                                    <td>replace</td>
+                                    <td>
+                                          调用
+                                          <code>router.replace()</code>
+                                    </td>
+                                    <td>Boolean</td>
+                                    <td>-</td>
+                              </tr>
+                              <tr>
+                                    <td>nuxt</td>
+                                    <td>启用nuxt.js的导航 (前提是使用了nuxt.js )</td>
+                                    <td>Boolean</td>
+                                    <td>-</td>
+                              </tr>
+                              <tr>
+                                    <td>exact-active-class</td>
+                                    <td>
+                                          当链接被精确匹配的时候应该激活的
+                                          <code>class</code>
+                                    </td>
+                                    <td>String</td>
+                                    <td>-</td>
+                              </tr>
+                              <tr>
+                                    <td>append</td>
+                                    <td>在当前 (相对) 路径前添加基路径</td>
+                                    <td>Boolean</td>
+                                    <td>-</td>
+                              </tr>
+                              <tr>
+                                    <td>active-class</td>
+                                    <td>链接激活时使用的 CSS 类名</td>
+                                    <td>String</td>
+                                    <td>-</td>
+                              </tr>
+                              <tr>
+                                    <td>exact</td>
+                                    <td>
+                                          "是否激活" 默认类名的依据是 inclusive match (全包含匹配)。 举个例子，如果当前的路径是 /a 开头的，那么
+                                          <code>&lt;router-link to="/a"&gt;</code> 也会被设置 CSS 类名。
+                                    </td>
+                                    <td>Boolean</td>
+                                    <td>-</td>
+                              </tr>
+                        </tbody>
+                  </table>
+            </div>
             <h3>slots</h3>
-            <table>
-                  <thead>
-                        <tr>
-                              <th>属性</th>
-                              <th>说明</th>
-                        </tr>
-                  </thead>
-                  <tbody>
-                        <tr>
-                              <td>default</td>
-                              <td>Vue默认原生插槽</td>
-                        </tr>
-                  </tbody>
-            </table>
+            <div class="table">
+                  <table>
+                        <thead>
+                              <tr>
+                                    <th>属性</th>
+                                    <th>说明</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                    <td>default</td>
+                                    <td>Vue默认原生插槽</td>
+                              </tr>
+                        </tbody>
+                  </table>
+            </div>
       </div>
 </template>
 
