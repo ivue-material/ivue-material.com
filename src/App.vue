@@ -46,17 +46,17 @@ export default {
                   routers: [
                         {
                               name: '安装',
-                              router: '/install',
+                              router: '/docs/install',
                               child: []
                         },
                         {
                               name: '开始使用',
-                              router: '/start-use',
+                              router: '/docs/start-use',
                               child: []
                         },
                         {
                               name: '色彩',
-                              router: '/color',
+                              router: '/docs/color',
                               child: []
                         },
                         {
@@ -180,16 +180,28 @@ export default {
             }
       },
       created () {
+            // if (window.location.protocol === 'http:' &&  !(process.env.NODE_ENV === 'development')) {
+            //       window.location.protocol = 'https:'
+            // }
+      },
+      mounted () {
             let route = this.$route;
             if (route.name === 'error') {
                   this.$router.replace({
                         name: 'error',
-                        params: '/home'
+                        params: '/'
                   });
             }
       },
       watch: {
-            $route () {
+            $route (route) {
+                  if (route.path === '/docs/') {
+                        this.$router.replace({
+                              name: 'error',
+                              params: '/'
+                        });
+                  }
+
                   window.scrollTo(0, 0)
             }
       }
@@ -276,6 +288,7 @@ export default {
             height: 60px;
             background-color: #fff;
             box-shadow: 0 0 5px rgba(57, 70, 78, 0.2);
+            opacity: 0.9;
             &-wrapper {
                   display: flex;
                   align-items: center;

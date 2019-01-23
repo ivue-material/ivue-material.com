@@ -5,8 +5,18 @@
                   <h2>一套基于 Material Design 规范</h2>
                   <h2>UI组件库</h2>
                   <div class="button-wrapper">
-                        <IvueButton class="button" color="primary" depressed @click="handleStartUse">开始使用</IvueButton>
-                        <IvueButton class="button" color="primary" outline @click="handleGitHub">GitHub</IvueButton>
+                        <IvueButton
+                              class="button"
+                              color="primary"
+                              depressed
+                              @click="handleStartUse"
+                        >开始使用</IvueButton>
+                        <IvueButton
+                              class="button"
+                              color="primary"
+                              outline
+                              @click="handleGitHub"
+                        >GitHub</IvueButton>
                   </div>
             </div>
       </div>
@@ -39,6 +49,9 @@ export default {
             flex-direction: column;
             padding: 60px 0 0 90px;
             height: 100%;
+            h2 {
+                  font-size: 24px;
+            }
       }
       &-title {
             margin: 0;
@@ -49,7 +62,7 @@ export default {
 
 .button-wrapper {
       margin-top: 50px;
-      .button{
+      .button {
             margin: 0 20px 0 0;
             width: 100px;
             border-radius: 50px;

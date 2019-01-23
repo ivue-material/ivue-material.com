@@ -68,7 +68,7 @@ export default new Router({
   routes: [
     // 路径错误时跳转
     {
-      path: '/home',
+      path: '/',
       name: 'error',
       alias: '*',
       component: Home
