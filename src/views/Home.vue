@@ -2,8 +2,8 @@
       <div class="home">
             <div class="home-wrapper">
                   <h1 class="home-title">IVue</h1>
-                  <h2>一套基于 Material Design 规范</h2>
-                  <h2>UI组件库</h2>
+                  <h2 class="home-text">一套基于 Material Design 规范</h2>
+                  <h2 class="home-text">UI组件库</h2>
                   <div class="button-wrapper">
                         <IvueButton
                               class="button"
@@ -49,14 +49,16 @@ export default {
             flex-direction: column;
             padding: 60px 0 0 90px;
             height: 100%;
-            h2 {
-                  font-size: 24px;
-            }
+            text-align: left;
       }
       &-title {
             margin: 0;
             display: block;
             font-size: 60px;
+      }
+      &-text {
+            margin: 12px 10px !important;
+            font-size: 24px;
       }
 }
 

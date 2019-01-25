@@ -1,35 +1,37 @@
 <template>
       <div class="docs-content">
-            <div class="docs-content-left">
-                  <ul class="router-lists">
-                        <li v-for="item in routers" :key="item.name" class="router-lists-li">
-                              <router-link
-                                    :to="item.router"
-                                    v-if="item.router"
-                                    class="router-lists-item"
-                              >{{item.name}}</router-link>
-                              <div v-else>
-                                    <p class="router-lists--child-header">{{item.name}}</p>
-                                    <div
-                                          v-if="item.child.length > 0"
-                                          v-for="child in item.child"
-                                          :key="child.name"
-                                          class="router-lists--child-group"
-                                    >
-                                          <p class="router-lists--child">{{child.name}}</p>
-                                          <ul>
-                                                <router-link
-                                                      v-for="menu in child.menu"
-                                                      :to="menu.router"
-                                                      :key="menu.name"
-                                                      class="router-lists--child-item"
-                                                >{{menu.name}}</router-link>
-                                          </ul>
+            <transition name="docs-transition">
+                  <div class="docs-content-left" v-show="hideMenu" @click="handleHideMenu">
+                        <ul class="router-lists" @click.stop>
+                              <li v-for="item in routers" :key="item.name" class="router-lists-li">
+                                    <router-link
+                                          :to="item.router"
+                                          v-if="item.router"
+                                          class="router-lists-item"
+                                    >{{item.name}}</router-link>
+                                    <div v-else>
+                                          <p class="router-lists--child-header">{{item.name}}</p>
+                                          <div
+                                                v-if="item.child.length > 0"
+                                                v-for="child in item.child"
+                                                :key="child.name"
+                                                class="router-lists--child-group"
+                                          >
+                                                <p class="router-lists--child">{{child.name}}</p>
+                                                <ul>
+                                                      <router-link
+                                                            v-for="menu in child.menu"
+                                                            :to="menu.router"
+                                                            :key="menu.name"
+                                                            class="router-lists--child-item"
+                                                      >{{menu.name}}</router-link>
+                                                </ul>
+                                          </div>
                                     </div>
-                              </div>
-                        </li>
-                  </ul>
-            </div>
+                              </li>
+                        </ul>
+                  </div>
+            </transition>
             <div class="docs-content-right">
                   <keep-alive>
                         <router-view/>
@@ -39,6 +41,8 @@
 </template>
 
 <script>
+import { mapState, mapActions } from 'vuex';
+
 export default {
       data () {
             return {
@@ -192,6 +196,19 @@ export default {
                   });
             }
       },
+      computed: {
+            ...mapState({
+                  hideMenu: 'hideMenu'
+            })
+      },
+      methods: {
+            handleHideMenu () {
+                  this.setHideMenu(false);
+            },
+            ...mapActions({
+                  setHideMenu: 'setHideMenu'
+            })
+      },
       watch: {
             $route () {
                   window.scrollTo(0, 0)
@@ -210,12 +227,10 @@ export default {
             zoom: 1;
             display: block;
             z-index: 50;
-            background-color: #fff;
+            background: #fff;
             /*左*/
             &-left {
                   position: relative;
-                  display: block;
-                  padding: 24px 26px;
                   width: 16.66666667%;
                   float: left;
                   flex: 0 0 auto;
@@ -225,10 +240,13 @@ export default {
                   text-overflow: ellipsis;
                   white-space: nowrap;
                   font-size: 14px;
+                  background: #fff;
                   .router-lists {
                         display: flex;
                         flex-direction: column;
+                        padding: 24px 26px;
                         margin: 0;
+                        transition: transform 0.4s;
                         &-li {
                               display: block;
                               flex: 1;
@@ -291,6 +309,7 @@ export default {
                   flex: 0 0 auto;
                   display: block;
                   width: 83.33333333%;
+                  background-color: #fff;
                   p {
                         margin: 5px;
                   }
@@ -316,6 +335,44 @@ export default {
                         }
                   }
             }
+
+            @media screen and (min-width: 800px) {
+                  &-left {
+                        display: block !important;
+                  }
+            }
+
+            @media screen and (max-width: 800px) {
+                  &-left {
+                        position: fixed;
+                        top: 0;
+                        width: 100%;
+                        height: 100vh;
+                        overflow-y: scroll;
+                        z-index: 100;
+                        background: rgba(0, 0, 0, 0.8);
+                        .router-lists {
+                              margin-right: 30%;
+                              background: #fff;
+                        }
+                  }
+                  &-right {
+                        overflow: hidden;
+                        width: 100%;
+                  }
+            }
+      }
+}
+
+.docs-transition-enter-active,
+.docs-transition-leave-active {
+      transition: opacity 0.4s;
+}
+.docs-transition-enter,
+.docs-transition-leave-to {
+      opacity: 0;
+      .router-lists {
+            transform: translate3d(-100%, 0, 0);
       }
 }
 </style>

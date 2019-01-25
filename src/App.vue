@@ -1,7 +1,12 @@
 <template>
       <div id="app">
-            <div class="app-header">
+            <div class="app-header" :style="{'z-index': hideMenu ? '0' : '100'}">
                   <div class="app-header-wrapper">
+                        <div class="app-header-menu">
+                              <IvueButton flat icon @click="handleMenu()">
+                                    <IvueIcon>menu</IvueIcon>
+                              </IvueButton>
+                        </div>
                         <router-link to="/">
                               <div class="app-header-img">
                                     <img src="./assets/logo.png">
@@ -34,6 +39,8 @@
 </template>
 
 <script>
+import { mapState, mapActions } from 'vuex';
+
 export default {
       name: 'app',
       data () {
@@ -179,11 +186,6 @@ export default {
                   ]
             }
       },
-      created () {
-            // if (window.location.protocol === 'http:' &&  !(process.env.NODE_ENV === 'development')) {
-            //       window.location.protocol = 'https:'
-            // }
-      },
       mounted () {
             let route = this.$route;
             if (route.name === 'error') {
@@ -193,6 +195,19 @@ export default {
                   });
             }
       },
+      computed: {
+            ...mapState({
+                  hideMenu: 'hideMenu'
+            })
+      },
+      methods: {
+            handleMenu () {
+                  this.setHideMenu(!this.hideMenu);
+            },
+            ...mapActions({
+                  setHideMenu: 'setHideMenu'
+            })
+      },
       watch: {
             $route (route) {
                   if (route.path === '/docs/') {
@@ -201,6 +216,8 @@ export default {
                               params: '/'
                         });
                   }
+
+                  this.setHideMenu(!this.hideMenu);
 
                   window.scrollTo(0, 0)
             }
@@ -270,9 +287,9 @@ export default {
             color: black;
       }
 
-      code {
-            // background-color: #f3f5f6;
-      }
+      // code {
+      //       // background-color: #f3f5f6;
+      // }
 
       .router-link-active {
             color: #2d8cf0;
@@ -312,7 +329,21 @@ export default {
                   width: 100%;
                   justify-content: flex-end;
             }
-            z-index: 100;
+            &-menu {
+                  display: none;
+            }
+
+            @media screen and (max-width: 800px) {
+                  &-img {
+                        display: none;
+                  }
+                  &-menu {
+                        display: block;
+                        .ivue-icon {
+                              font-size: 35px;
+                        }
+                  }
+            }
       }
 }
 
