@@ -1,5 +1,5 @@
 <template>
-      <div class="doc-markdown ivue-elevation-2">
+      <div class="doc-markdown ivue-elevation-2" ref="docMarkdown">
             <!-- 头部 -->
             <nav class="doc-markdown-header">
                   <div class="doc-markdown-header--content">

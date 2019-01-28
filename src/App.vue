@@ -39,151 +39,13 @@
 </template>
 
 <script>
+import Vue from 'vue';
 import { mapState, mapActions } from 'vuex';
 
 export default {
       name: 'app',
       data () {
             return {
-                  /**
-                   * 路由导航
-                   * 
-                   * @type {Array}
-                   */
-                  routers: [
-                        {
-                              name: '安装',
-                              router: '/docs/install',
-                              child: []
-                        },
-                        {
-                              name: '开始使用',
-                              router: '/docs/start-use',
-                              child: []
-                        },
-                        {
-                              name: '色彩',
-                              router: '/docs/color',
-                              child: []
-                        },
-                        {
-                              name: '组件',
-                              child: [
-                                    {
-                                          name: '基础',
-                                          menu: [
-                                                {
-                                                      name: 'content 内容',
-                                                      router: '/components/content'
-                                                },
-                                                {
-                                                      name: 'button 按钮',
-                                                      router: '/components/button'
-                                                },
-                                                {
-                                                      name: 'icon 图标',
-                                                      router: '/components/icon'
-                                                }
-                                          ]
-                                    },
-                                    {
-                                          name: '布局',
-                                          menu: [
-                                                {
-                                                      name: 'Elevation',
-                                                      router: '/components/elevation'
-                                                },
-                                                {
-                                                      name: 'Layout',
-                                                      router: '/components/layout'
-                                                }
-                                          ]
-                                    },
-                                    {
-                                          name: 'UI',
-                                          menu: [
-                                                {
-                                                      name: 'List 列表',
-                                                      router: '/components/list'
-                                                },
-                                                {
-                                                      name: 'Carousel 走马灯',
-                                                      router: '/components/carousel'
-                                                },
-                                                {
-                                                      name: 'Switch 开关',
-                                                      router: '/components/switch'
-                                                },
-                                                {
-                                                      name: 'BottomNav 底部导航',
-                                                      router: '/components/bottom-nav'
-                                                },
-                                                {
-                                                      name: 'Breadcrumbs 面包屑',
-                                                      router: '/components/breadcrumbs'
-                                                },
-                                                {
-                                                      name: 'Select 选择器',
-                                                      router: '/components/select'
-                                                },
-                                                {
-                                                      name: 'AutoComplete 输入框自动完成功能',
-                                                      router: '/components/auto-complete'
-                                                },
-                                                {
-                                                      name: 'Input 输入框',
-                                                      router: '/components/input'
-                                                },
-                                                {
-                                                      name: 'Stepper 步骤条',
-                                                      router: '/components/stepper'
-                                                },
-                                                {
-                                                      name: 'UpLoad 上传',
-                                                      router: '/components/upLoad'
-                                                },
-                                                {
-                                                      name: 'Progress 进度条',
-                                                      router: '/components/progress'
-                                                },
-                                                {
-                                                      name: 'Notice 通知提醒',
-                                                      router: '/components/notice'
-                                                },
-                                                {
-                                                      name: 'Message 全局提示',
-                                                      router: '/components/message'
-                                                },
-                                                {
-                                                      name: 'LoadingBar 加载进度条',
-                                                      router: '/components/loading-bar'
-                                                },
-                                                {
-                                                      name: 'Tabs 标签页',
-                                                      router: '/components/tabs'
-                                                },
-                                                {
-                                                      name: 'Badge 图钉',
-                                                      router: '/components/badge'
-                                                },
-                                                {
-                                                      name: 'DatePicker 日期/月份选择器',
-                                                      router: '/components/date-picker'
-                                                }
-                                          ]
-                                    },
-                                    {
-                                          name: '其他',
-                                          menu: [
-                                                {
-                                                      name: 'Affix 图钉',
-                                                      router: '/components/affix'
-                                                }
-                                          ]
-                                    },
-                              ]
-                        }
-                  ]
             }
       },
       mounted () {
@@ -199,6 +61,9 @@ export default {
             ...mapState({
                   hideMenu: 'hideMenu'
             })
+      },
+      mounted () {
+            this.initial = true;
       },
       methods: {
             handleMenu () {
@@ -217,8 +82,12 @@ export default {
                         });
                   }
 
-                  this.setHideMenu(!this.hideMenu);
+                  if (Vue.isMobile && !this.initial) {
+                        this.setHideMenu(!this.hideMenu);
+                  }
 
+                  this.initial = false;
+                  
                   window.scrollTo(0, 0)
             }
       }

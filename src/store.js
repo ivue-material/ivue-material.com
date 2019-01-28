@@ -17,7 +17,6 @@ export default new Vuex.Store({
   mutations: {
     [HIDE_MENU] (state, HIDE_MENU) {
       state.hideMenu = HIDE_MENU;
-      console.log(state)
     }
   },
   actions: {

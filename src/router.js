@@ -1,34 +1,35 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-const Home = () => import( './views/Home.vue')
-const Docs = () => import( './views/Docs.vue')
-const Install = () => import( './views/Install.vue')
-const StartUse = () => import( './views/StartUse.vue')
-const Color = () => import( './views/Color.vue')
-const Elevation = () => import( './views/Elevation.vue')
-const Layout = () => import( './views/Layout.vue')
-const Content = () => import( './views/Content.vue')
-const Button = () => import( './views/Button.vue')
-const Icon = () => import( './views/Icon.vue')
-const List = () => import( './views/List.vue')
-const Carousel = () => import( './views/Carousel.vue')
-const Switch = () => import( './views/Switch.vue')
-const BottomNav = () => import( './views/BottomNav.vue')
-const Breadcrumbs = () => import( './views/Breadcrumbs.vue')
-const Select = () => import( './views/Select.vue')
-const AutoComplete = () => import( './views/AutoComplete.vue')
-const Input = () => import( './views/Input.vue')
-const Stepper = () => import( './views/Stepper.vue')
-const Upload = () => import( './views/Upload.vue')
-const Progress = () => import( './views/Progress.vue')
-const Notice = () => import( './views/Notice.vue')
-const Message = () => import( './views/Message.vue')
-const Tabs = () => import( './views/Tabs.vue')
-const LoadingBar = () => import( './views/LoadingBar.vue')
-const Badge = () => import( './views/Badge.vue')
-const DatePicker = () => import( './views/DatePicker.vue')
-const Affix = () => import( './views/Affix.vue')
+const Home = () => import('./views/Home.vue')
+const Docs = () => import('./views/Docs.vue')
+const Install = () => import('./views/Install.vue')
+const StartUse = () => import('./views/StartUse.vue')
+const Color = () => import('./views/Color.vue')
+const Elevation = () => import('./views/Elevation.vue')
+const Layout = () => import('./views/Layout.vue')
+const Content = () => import('./views/Content.vue')
+const Button = () => import('./views/Button.vue')
+const Icon = () => import('./views/Icon.vue')
+const List = () => import('./views/List.vue')
+const Carousel = () => import('./views/Carousel.vue')
+const Switch = () => import('./views/Switch.vue')
+const BottomNav = () => import('./views/BottomNav.vue')
+const Breadcrumbs = () => import('./views/Breadcrumbs.vue')
+const Select = () => import('./views/Select.vue')
+const AutoComplete = () => import('./views/AutoComplete.vue')
+const Input = () => import('./views/Input.vue')
+const Stepper = () => import('./views/Stepper.vue')
+const Upload = () => import('./views/Upload.vue')
+const Progress = () => import('./views/Progress.vue')
+const Notice = () => import('./views/Notice.vue')
+const Message = () => import('./views/Message.vue')
+const Tabs = () => import('./views/Tabs.vue')
+const LoadingBar = () => import('./views/LoadingBar.vue')
+const Badge = () => import('./views/Badge.vue')
+const DatePicker = () => import('./views/DatePicker.vue')
+const Affix = () => import('./views/Affix.vue')
+const VirtualCollection = () => import('./views/VirtualCollection.vue')
 
 // import Home from './views/Home.vue'
 // import Docs from './views/Docs.vue'
@@ -238,6 +239,12 @@ export default new Router({
           path: '/components/affix',
           name: 'affix',
           component: Affix
+        },
+        // VirtualCollection
+        {
+          path: '/components/virtual-collection',
+          name: 'virtual-collection',
+          component: VirtualCollection
         }
       ]
     }

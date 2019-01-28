@@ -179,6 +179,10 @@ export default {
                                                 {
                                                       name: 'Affix 图钉',
                                                       router: '/components/affix'
+                                                },
+                                                {
+                                                      name: 'VirtualCollection 无限滚动(块渲染)',
+                                                      router: '/components/virtual-collection'
                                                 }
                                           ]
                                     },
