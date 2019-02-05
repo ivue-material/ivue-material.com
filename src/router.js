@@ -30,6 +30,7 @@ const Badge = () => import('./views/Badge.vue')
 const DatePicker = () => import('./views/DatePicker.vue')
 const Affix = () => import('./views/Affix.vue')
 const VirtualCollection = () => import('./views/VirtualCollection.vue')
+const Collapse = () => import('./views/Collapse.vue')
 
 // import Home from './views/Home.vue'
 // import Docs from './views/Docs.vue'
@@ -245,6 +246,13 @@ export default new Router({
           path: '/components/virtual-collection',
           name: 'virtual-collection',
           component: VirtualCollection
+        },
+        // Collapse
+        {
+          path: '/components/collapse',
+          name: 'collapse',
+          component: Collapse
+
         }
       ]
     }

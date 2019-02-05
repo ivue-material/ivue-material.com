@@ -170,6 +170,11 @@ export default {
                                                 {
                                                       name: 'DatePicker 日期/月份选择器',
                                                       router: '/components/date-picker'
+                                                },
+                                                {
+                                                       name: 'Collapse 折叠面板',
+                                                      router: '/components/collapse'
+                                                      
                                                 }
                                           ]
                                     },

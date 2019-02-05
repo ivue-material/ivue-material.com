@@ -156,9 +156,9 @@ export default {
             color: black;
       }
 
-      // code {
-      //       // background-color: #f3f5f6;
-      // }
+      code {
+            background-color: #f3f5f6;
+      }
 
       .router-link-active {
             color: #2d8cf0;
