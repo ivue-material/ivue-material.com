@@ -31,6 +31,7 @@ const DatePicker = () => import('./views/DatePicker.vue')
 const Affix = () => import('./views/Affix.vue')
 const VirtualCollection = () => import('./views/VirtualCollection.vue')
 const Collapse = () => import('./views/Collapse.vue')
+const Cascader = () => import('./views/Cascader.vue')
 
 // import Home from './views/Home.vue'
 // import Docs from './views/Docs.vue'
@@ -253,7 +254,14 @@ export default new Router({
           name: 'collapse',
           component: Collapse
 
-        }
+        },
+        // cascader
+        {
+            path: '/components/cascader',
+            name: 'collapse',
+            component: Cascader
+
+          }
       ]
     }
   ]

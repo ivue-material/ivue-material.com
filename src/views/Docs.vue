@@ -48,7 +48,7 @@ export default {
             return {
                   /**
                    * 路由导航
-                   * 
+                   *
                    * @type {Array}
                    */
                   routers: [
@@ -174,7 +174,12 @@ export default {
                                                 {
                                                        name: 'Collapse 折叠面板',
                                                       router: '/components/collapse'
-                                                      
+
+                                                },
+                                                {
+                                                       name: 'Cascader 级联选择器',
+                                                      router: '/components/cascader'
+
                                                 }
                                           ]
                                     },
