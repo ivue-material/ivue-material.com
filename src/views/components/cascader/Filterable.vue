@@ -1,9 +1,6 @@
 <template>
     <div>
-        <p>click</p>
-        <IvueCascader :options="options"></IvueCascader>
-        <p>hover</p>
-        <IvueCascader trigger="hover" :options="options"></IvueCascader>
+        <IvueCascader  placeholder="试试搜索：指南" :options="options" filterable></IvueCascader>
     </div>
 </template>
 
