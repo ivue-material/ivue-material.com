@@ -9,7 +9,7 @@
                         </div>
                         <router-link to="/">
                               <div class="app-header-img">
-                                    <img src="./assets/logo.png">
+                                    <img src="./static/logo.png">
                                     <p class="text">IVue</p>
                               </div>
                         </router-link>
@@ -87,7 +87,7 @@ export default {
                   }
 
                   this.initial = false;
-                  
+
                   window.scrollTo(0, 0)
             }
       }
