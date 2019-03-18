@@ -38,7 +38,7 @@
         </p>
         <DocMarkdown
             :code="code.center"
-            jsfiddle="//jsfiddle.net/qq282126990/jx4Lvqsf/"
+            jsfiddle="//jsfiddle.net/qq282126990/ns6ef2uc/"
             github="//github.com/qq282126990/ivue.com/blob/master/src/views/components/button/Color.vue"
         >
             <Color slot="demo"></Color>
