@@ -33,6 +33,7 @@ const VirtualCollection = () => import('./views/VirtualCollection.vue')
 const Collapse = () => import('./views/Collapse.vue')
 const Cascader = () => import('./views/Cascader.vue')
 const Ripple = () => import('./views/Ripple.vue')
+const Touch = () => import('./views/Touch.vue')
 
 // import Home from './views/Home.vue'
 // import Docs from './views/Docs.vue'
@@ -268,6 +269,12 @@ export default new Router({
                     path: '/directives/ripple',
                     name: 'directives-ripple',
                     component: Ripple
+                },
+                // directives touch
+                {
+                    path: '/directives/touch',
+                    name: 'directives-touch',
+                    component: Touch
                 }
             ]
         }

@@ -207,6 +207,10 @@ export default {
                                 {
                                     name: 'Ripple 波纹指令',
                                     router: '/directives/ripple'
+                                },
+                                {
+                                    name: 'Touch 手势指令',
+                                    router: '/directives/touch'
                                 }
                             ]
                         },
