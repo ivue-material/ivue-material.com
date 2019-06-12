@@ -179,7 +179,10 @@ export default {
                                 {
                                     name: 'Cascader 级联选择器',
                                     router: '/components/cascader'
-
+                                },
+                                {
+                                    name: 'Tooltip 提示',
+                                    router: '/components/tooltip'
                                 }
                             ]
                         },

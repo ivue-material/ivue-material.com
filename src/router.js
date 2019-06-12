@@ -34,6 +34,7 @@ const Collapse = () => import('./views/Collapse.vue')
 const Cascader = () => import('./views/Cascader.vue')
 const Ripple = () => import('./views/Ripple.vue')
 const Touch = () => import('./views/Touch.vue')
+const Tooltip = () => import('./views/Tooltip.vue')
 
 // import Home from './views/Home.vue'
 // import Docs from './views/Docs.vue'
@@ -262,6 +263,13 @@ export default new Router({
                     path: '/components/cascader',
                     name: 'cascader',
                     component: Cascader
+
+                },
+                // Tooltip
+                {
+                    path: '/components/tooltip',
+                    name: 'tooltip',
+                    component: Tooltip
 
                 },
                 // directives ripple
