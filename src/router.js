@@ -35,6 +35,7 @@ const Cascader = () => import('./views/Cascader.vue')
 const Ripple = () => import('./views/Ripple.vue')
 const Touch = () => import('./views/Touch.vue')
 const Tooltip = () => import('./views/Tooltip.vue')
+const Chip = () => import('./views/Chip.vue')
 
 // import Home from './views/Home.vue'
 // import Docs from './views/Docs.vue'
@@ -270,6 +271,13 @@ export default new Router({
                     path: '/components/tooltip',
                     name: 'tooltip',
                     component: Tooltip
+
+                },
+                // Chip
+                {
+                    path: '/components/chip',
+                    name: 'chip',
+                    component: Chip
 
                 },
                 // directives ripple

@@ -183,6 +183,10 @@ export default {
                                 {
                                     name: 'Tooltip 提示',
                                     router: '/components/tooltip'
+                                },
+                                {
+                                    name: 'Chip 芯片',
+                                    router: '/components/chip'
                                 }
                             ]
                         },
