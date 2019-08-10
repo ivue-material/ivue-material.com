@@ -36,35 +36,7 @@ const Ripple = () => import('./views/Ripple.vue')
 const Touch = () => import('./views/Touch.vue')
 const Tooltip = () => import('./views/Tooltip.vue')
 const Chip = () => import('./views/Chip.vue')
-
-// import Home from './views/Home.vue'
-// import Docs from './views/Docs.vue'
-// import Install from './views/Install.vue'
-// import StartUse from './views/StartUse.vue'
-// import Color from './views/Color.vue'
-// import Elevation from './views/Elevation.vue'
-// import Layout from './views/Layout.vue'
-// import Content from './views/Content.vue'
-// import Button from './views/Button.vue'
-// import Icon from './views/Icon.vue'
-// import List from './views/List.vue'
-// import Carousel from './views/Carousel.vue'
-// import Switch from './views/Switch.vue'
-// import BottomNav from './views/BottomNav.vue'
-// import Breadcrumbs from './views/Breadcrumbs.vue'
-// import Select from './views/Select.vue'
-// import AutoComplete from './views/AutoComplete.vue'
-// import Input from './views/Input.vue'
-// import Stepper from './views/Stepper.vue'
-// import Upload from './views/Upload.vue'
-// import Progress from './views/Progress.vue'
-// import Notice from './views/Notice.vue'
-// import Message from './views/Message.vue'
-// import Tabs from './views/Tabs.vue'
-// import LoadingBar from './views/LoadingBar.vue'
-// import Badge from './views/Badge.vue'
-// import DatePicker from './views/DatePicker.vue'
-// import Affix from './views/Affix.vue'
+const Radio = () => import('./views/Radio.vue')
 
 Vue.use(Router);
 
@@ -278,6 +250,13 @@ export default new Router({
                     path: '/components/chip',
                     name: 'chip',
                     component: Chip
+
+                },
+                // Radio
+                {
+                    path: '/components/radio',
+                    name: 'radio',
+                    component: Radio
 
                 },
                 // directives ripple
