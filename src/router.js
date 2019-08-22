@@ -37,6 +37,7 @@ const Touch = () => import('./views/Touch.vue')
 const Tooltip = () => import('./views/Tooltip.vue')
 const Chip = () => import('./views/Chip.vue')
 const Radio = () => import('./views/Radio.vue')
+const CheckBox = () => import('./views/CheckBox.vue')
 
 Vue.use(Router);
 
@@ -229,14 +230,12 @@ export default new Router({
                     path: '/components/collapse',
                     name: 'collapse',
                     component: Collapse
-
                 },
                 // cascader
                 {
                     path: '/components/cascader',
                     name: 'cascader',
                     component: Cascader
-
                 },
                 // Tooltip
                 {
@@ -257,7 +256,12 @@ export default new Router({
                     path: '/components/radio',
                     name: 'radio',
                     component: Radio
-
+                },
+                // CheckBox
+                {
+                    path: '/components/checkbox',
+                    name: 'checkbox',
+                    component: CheckBox
                 },
                 // directives ripple
                 {

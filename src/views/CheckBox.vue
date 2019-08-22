@@ -1,36 +1,36 @@
 <template>
     <div>
-        <h1>Radio 单选框</h1>
-        <p>可选项单项选择,切换单选选择状态</p>
+        <h1>CheckBox 多选框</h1>
+        <p>主要用于可选项多项选择</p>
         <h2>基本用法</h2>
         <p>使用 v-model 双向绑定数据。</p>
         <DocMarkdown
             :code="code.base"
-            jsfiddle="//jsfiddle.net/qq282126990/anmvzoL7/"
-            github="//github.com/qq282126990/ivue.com/blob/master/src/views/components/radio/Default.vue"
+            jsfiddle="//jsfiddle.net/qq282126990/7exkonc9/"
+            github="//github.com/qq282126990/ivue.com/blob/master/src/views/components/checkbox/Default.vue"
         >
             <Default slot="demo"></Default>
         </DocMarkdown>
         <h2>组合使用</h2>
         <p>
             使用
-            <code>IvueRadioGroup</code>
-            实现一组选项组，组合会自动使用
-            <code>IvueRadio</code>的
+            <code>IvueCheckboxGroup</code>
+            配合数组生成组合,组合会自动使用
+            <code>IvueCheckbox</code>的
             <code>label</code>
             属性来自动判断当前选项是否选中，每个
-            <code>IvueRadio</code>的内容都是自定义的，如果不定义内容，那么
-            <code>IvueRadio</code>
+            <code>IvueCheckbox</code>的内容都是自定义的，如果不定义内容，那么
+            <code>IvueCheckbox</code>
             将自动使用
             <code>label</code>
             的值作为内容
         </p>
         <DocMarkdown
-            :code="code.group"
-            jsfiddle="//jsfiddle.net/qq282126990/bv5t49xk/"
-            github="//github.com/qq282126990/ivue.com/blob/master/src/views/components/radio/Group.vue"
+            :code="code.guop"
+            jsfiddle="//jsfiddle.net/qq282126990/fzt214ab/"
+            github="//github.com/qq282126990/ivue.com/blob/master/src/views/components/checkbox/Gruop.vue"
         >
-            <Group slot="demo"></Group>
+            <Gruop slot="demo"></Gruop>
         </DocMarkdown>
         <h2>不可用</h2>
         <p>
@@ -39,23 +39,22 @@
         </p>
         <DocMarkdown
             :code="code.disabled"
-            jsfiddle="//jsfiddle.net/qq282126990/yeoxn70d/"
-            github="//github.com/qq282126990/ivue.com/blob/master/src/views/components/radio/Disabled.vue"
+            jsfiddle="//jsfiddle.net/qq282126990/n58Ldjh7/"
+            github="//github.com/qq282126990/ivue.com/blob/master/src/views/components/checkbox/Disabled.vue"
         >
             <Disabled slot="demo"></Disabled>
         </DocMarkdown>
-        <h2>垂直</h2>
+        <h2>不确定选项</h2>
         <p>
-            设置属性
-            <code>vertical</code>使
-            <code>IvueRadioGroup</code>垂直显示
+            在实现全选时，可以使用
+            <code>indeterminate</code>属性，展示未全选时的效果
         </p>
         <DocMarkdown
-            :code="code.vertical"
-            jsfiddle="//jsfiddle.net/qq282126990/d8ngzmfo/"
-            github="//github.com/qq282126990/ivue.com/blob/master/src/views/components/radio/Vertical.vue"
+            :code="code.indeterminate"
+            jsfiddle="//jsfiddle.net/qq282126990/L4xo50t1/"
+            github="//github.com/qq282126990/ivue.com/blob/master/src/views/components/checkbox/Indeterminate.vue"
         >
-            <Vertical slot="demo"></Vertical>
+            <Indeterminate slot="demo"></Indeterminate>
         </DocMarkdown>
         <h2>尺寸</h2>
         <p>
@@ -66,12 +65,12 @@
         </p>
         <DocMarkdown
             :code="code.size"
-            jsfiddle="//jsfiddle.net/qq282126990/gyj25o4t/"
-            github="//github.com/qq282126990/ivue.com/blob/master/src/views/components/radio/Size.vue"
+            jsfiddle="//jsfiddle.net/qq282126990/3egbhyk9/"
+            github="//github.com/qq282126990/ivue.com/blob/master/src/views/components/checkbox/Size.vue"
         >
             <Size slot="demo"></Size>
         </DocMarkdown>
-        <h3>radio props</h3>
+        <h3>checkbox props</h3>
         <div class="table">
             <table>
                 <thead>
@@ -96,12 +95,21 @@
                         <td>label</td>
                         <td>
                             只有在使用
-                            <code>IvueRadioGroup</code>时有效。指定当前选项的
+                            <code>IvueCheckboxGroup</code>时有效。指定当前选项的
                             <code>value</code>值，
-                            <code>IvueRadioGroup</code>会判断需要激活的项目
+                            <code>IvueCheckboxGroup</code>会判断需要激活的项目
                         </td>
                         <td>String | Number</td>
                         <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>indeterminate</td>
+                        <td>
+                            设置
+                            <code>indeterminate</code>不确定状态，只控制样式
+                        </td>
+                        <td>Boolean</td>
+                        <td>false</td>
                     </tr>
                     <tr>
                         <td>disabled</td>
@@ -140,14 +148,14 @@
                     </tr>
                     <tr>
                         <td>color</td>
-                        <td>设置当前圆圈⭕️的颜色</td>
+                        <td>设置当前复选框背景颜色</td>
                         <td>String</td>
                         <td>-</td>
                     </tr>
                 </tbody>
             </table>
         </div>
-        <h3>radio event</h3>
+        <h3>checkbox event</h3>
         <div class="table">
             <table>
                 <thead>
@@ -166,7 +174,7 @@
                 </tbody>
             </table>
         </div>
-        <h3>radio group props</h3>
+        <h3>checkbox group props</h3>
         <div class="table">
             <table>
                 <thead>
@@ -181,22 +189,16 @@
                     <tr>
                         <td>value</td>
                         <td>
-                            可以使用
+                            指定选中的选项，可以使用
                             <code>v-model</code>双向绑定数据
                         </td>
-                        <td>Boolean</td>
-                        <td>false</td>
-                    </tr>
-                    <tr>
-                        <td>vertical</td>
-                        <td>是否垂直排列</td>
-                        <td>Boolean</td>
-                        <td>false</td>
+                        <td>Array</td>
+                        <td>[]</td>
                     </tr>
                 </tbody>
             </table>
         </div>
-        <h3>radio group event</h3>
+        <h3>checkbox group event</h3>
         <div class="table">
             <table>
                 <thead>
@@ -220,13 +222,13 @@
 
 <script>
 import DocMarkdown from '@/components/DocMarkdown';
-import Default from './components/radio/Default.vue';
-import Group from './components/radio/Group.vue';
-import Disabled from './components/radio/Disabled.vue';
-import Vertical from './components/radio/Vertical.vue';
-import Size from './components/radio/Size.vue';
+import Default from './components/checkbox/Default.vue';
+import Gruop from './components/checkbox/Gruop.vue';
+import Disabled from './components/checkbox/Disabled.vue';
+import Size from './components/checkbox/Size.vue';
+import Indeterminate from './components/checkbox/Indeterminate.vue';
 
-import Code from '@/code/radio';
+import Code from '@/code/checkbox';
 
 export default {
     name: 'ivue-component-radio',
@@ -238,10 +240,10 @@ export default {
     components: {
         DocMarkdown,
         Default,
-        Group,
+        Gruop,
         Disabled,
-        Vertical,
-        Size
+        Size,
+        Indeterminate
     }
 }
 </script>

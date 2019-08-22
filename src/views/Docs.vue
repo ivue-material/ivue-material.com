@@ -188,10 +188,13 @@ export default {
                                     name: 'Chip 芯片',
                                     router: '/components/chip'
                                 },
-
                                 {
                                     name: 'Radio 单选框',
                                     router: '/components/radio'
+                                },
+                                {
+                                    name: 'CheckBox 复选框',
+                                    router: '/components/checkbox'
                                 },
                             ]
                         },
