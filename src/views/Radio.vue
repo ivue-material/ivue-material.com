@@ -144,6 +144,12 @@
                         <td>String</td>
                         <td>-</td>
                     </tr>
+                    <tr>
+                        <td>ripple-disabled</td>
+                        <td>是否禁用涟漪效果</td>
+                        <td>Boolean</td>
+                        <td>false</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
