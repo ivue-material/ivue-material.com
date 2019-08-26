@@ -108,7 +108,7 @@
                                     <td>false</td>
                               </tr>
                               <tr>
-                                    <td>ivue-ripple</td>
+                                    <td>ripple</td>
                                     <td>启用/禁用涟漪效应</td>
                                     <td>Boolean</td>
                                     <td>false</td>
