@@ -3,6 +3,7 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 import IvueMaterial from 'ivue-material';
+
 import Hljs from 'highlight.js';
 
 import 'ivue-material/dist/styles/ivue.css';

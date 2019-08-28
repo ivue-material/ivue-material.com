@@ -196,6 +196,10 @@ export default {
                                     name: 'CheckBox 复选框',
                                     router: '/components/checkbox'
                                 },
+                                {
+                                    name: 'Avatar 头像',
+                                    router: '/components/avatar'
+                                }
                             ]
                         },
                         {

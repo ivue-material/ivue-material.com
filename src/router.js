@@ -38,7 +38,7 @@ const Tooltip = () => import('./views/Tooltip.vue')
 const Chip = () => import('./views/Chip.vue')
 const Radio = () => import('./views/Radio.vue')
 const CheckBox = () => import('./views/CheckBox.vue')
-
+const Avatar = () => import('./views/Avatar.vue')
 Vue.use(Router);
 
 
@@ -262,6 +262,12 @@ export default new Router({
                     path: '/components/checkbox',
                     name: 'checkbox',
                     component: CheckBox
+                },
+                // Avatar
+                {
+                    path: '/components/avatar',
+                    name: 'avatar',
+                    component: Avatar
                 },
                 // directives ripple
                 {

@@ -42,7 +42,7 @@
             jsfiddle="//jsfiddle.net/qq282126990/hye8176j/"
             github="//github.com/qq282126990/ivue.com/blob/master/src/views/components/tooltip/Slot.vue"
         >
-            <Slot slot="demo"></Slot>
+            <Content slot="demo"></Content>
         </DocMarkdown>
         <h2>v-model</h2>
         <p>
@@ -186,7 +186,7 @@
 import DocMarkdown from '@/components/DocMarkdown';
 import Default from './components/tooltip/Default.vue';
 import Placement from './components/tooltip/Placement.vue';
-import Slot from './components/tooltip/Slot.vue';
+import Content from './components/tooltip/Slot.vue';
 import Model from './components/tooltip/Model.vue';
 import Code from '@/code/tooltip';
 
@@ -201,7 +201,7 @@ export default {
         DocMarkdown,
         Default,
         Placement,
-        Slot,
+        Content,
         Model
     }
 }
