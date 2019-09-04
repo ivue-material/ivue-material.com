@@ -39,6 +39,9 @@ const Chip = () => import('./views/Chip.vue')
 const Radio = () => import('./views/Radio.vue')
 const CheckBox = () => import('./views/CheckBox.vue')
 const Avatar = () => import('./views/Avatar.vue')
+const Page = () => import('./views/Page.vue')
+
+
 Vue.use(Router);
 
 
@@ -268,6 +271,12 @@ export default new Router({
                     path: '/components/avatar',
                     name: 'avatar',
                     component: Avatar
+                },
+                // Page
+                {
+                    path: '/components/page',
+                    name: 'page',
+                    component: Page
                 },
                 // directives ripple
                 {

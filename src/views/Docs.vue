@@ -199,6 +199,10 @@ export default {
                                 {
                                     name: 'Avatar 头像',
                                     router: '/components/avatar'
+                                },
+                                 {
+                                    name: 'Page 分页',
+                                    router: '/components/page'
                                 }
                             ]
                         },
