@@ -200,10 +200,18 @@ export default {
                                     name: 'Avatar 头像',
                                     router: '/components/avatar'
                                 },
-                                 {
+                                {
                                     name: 'Page 分页',
                                     router: '/components/page'
-                                }
+                                },
+                                {
+                                    name: 'Spin 加载中',
+                                    router: '/components/spin'
+                                },
+                                {
+                                    name: 'Table 表格',
+                                    router: '/components/table'
+                                },
                             ]
                         },
                         {

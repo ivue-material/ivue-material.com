@@ -40,6 +40,8 @@ const Radio = () => import('./views/Radio.vue')
 const CheckBox = () => import('./views/CheckBox.vue')
 const Avatar = () => import('./views/Avatar.vue')
 const Page = () => import('./views/Page.vue')
+const Spin = () => import('./views/Spin.vue')
+const Table = () => import('./views/Table.vue')
 
 
 Vue.use(Router);
@@ -277,6 +279,18 @@ export default new Router({
                     path: '/components/page',
                     name: 'page',
                     component: Page
+                },
+                // Spin
+                {
+                    path: '/components/spin',
+                    name: 'spin',
+                    component: Spin
+                },
+                // Table
+                {
+                    path: '/components/table',
+                    name: 'table',
+                    component: Table
                 },
                 // directives ripple
                 {
