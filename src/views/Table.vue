@@ -165,24 +165,24 @@
         >
             <Selection slot="demo"></Selection>
         </DocMarkdown>
-        <!-- <h2>自定义模板数据</h2>
+        <h2>自定义模板数据</h2>
         <p>
             通过给
-            <code>tableHeader</code>数据设置
+            <code>tableData</code>数据设置
             <code>render</code>，函数可自定义当前列，
             <code>render</code>函数传入两个参数，第一个是
             <code>h</code>，第二个是对象，包含
             <code>row</code>、
             <code>column</code>、
-            <code>index</code>，分别是当前单元格数据，当前列数据，当前是第几行
+            <code>index</code>，分别是当前行数据，当前列数据，当前是第几行
         </p>
         <DocMarkdown
             :code="code.isRender"
-            jsfiddle="//jsfiddle.net/qq282126990/smey4fh7/"
-            github="//github.com/qq282126990/ivue.com/blob/master/src/views/components/table/isRender.vue"
+            jsfiddle="//jsfiddle.net/qq282126990/18akef7x/"
+            github="//github.com/qq282126990/ivue.com/blob/master/src/views/components/table/IsRender.vue"
         >
-            <isRender slot="demo"></isRender>
-        </DocMarkdown>-->
+            <IsRender slot="demo"></IsRender>
+        </DocMarkdown>
         <h2>slot-scope</h2>
         <p>
             在
@@ -499,6 +499,18 @@
                         <td>-</td>
                     </tr>
                     <tr>
+                        <td>render</td>
+                        <td>
+                            自定义渲染列显示的内容，第一个参数为
+                            <code>h</code>，第二个参数为对象，包含
+                            <code>row</code>、
+                            <code>column</code>、
+                            <code>index</code>，分别为当前行数据、当前列数据，当前列索引。
+                        </td>
+                        <td>Function</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
                         <td>indexMethod</td>
                         <td>
                             type 为
@@ -594,7 +606,7 @@ import Fixed from './components/table/Fixed.vue';
 import Width from './components/table/Width.vue';
 import Highlight from './components/table/Highlight.vue';
 import Selection from './components/table/Selection.vue';
-import isRender from './components/table/isRender.vue';
+import IsRender from './components/table/IsRender.vue';
 import SlotScope from './components/table/SlotScope.vue';
 import Expand from './components/table/Expand.vue';
 import Loading from './components/table/Loading.vue';
@@ -616,7 +628,7 @@ export default {
         Width,
         Highlight,
         Selection,
-        isRender,
+        IsRender,
         SlotScope,
         Expand,
         Loading

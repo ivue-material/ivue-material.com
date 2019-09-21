@@ -12,9 +12,9 @@ export default {
                 {
                         title: 'Name',
                         key: 'name',
-                        renderHeader: (h, params) => {
+                        render: (h, params) => {
                             return h('div', [
-                                h('strong', `${params.column.title}`)
+                                h('strong', `${params.row.name}`)
                             ]);
                         }
                     },

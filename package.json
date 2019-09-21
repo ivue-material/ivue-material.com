@@ -7,11 +7,12 @@
         "build": "vue-cli-service build"
     },
     "dependencies": {
+        "@babel/runtime-corejs2": "^7.6.0",
         "core-js": "^3.2.1",
+        "updata": "^0.5.5",
         "vue": "^2.6.9",
         "vue-router": "^3.1.2",
-        "vuex": "^3.0.1",
-        "@babel/runtime-corejs2": "^7.6.0"
+        "vuex": "^3.0.1"
     },
     "devDependencies": {
         "@vue/cli-plugin-babel": "^3.0.4",
@@ -20,7 +21,7 @@
         "express": "^4.16.4",
         "highlight.js": "^9.13.1",
         "html-loader": "^0.5.5",
-        "ivue-material": "^0.8.1",
+        "ivue-material": "^0.8.2",
         "markdown-loader": "^4.0.0",
         "node-sass": "^4.9.0",
         "sass-loader": "^7.0.1",
