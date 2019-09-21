@@ -1,6 +1,6 @@
 <template>
     <div>
-        <IvueTable border :tableHeader="tableHeader" :tableData="tableData"></IvueTable>
+        <IvueTable :tableHeader="tableHeader" :tableData="tableData"></IvueTable>
     </div>
 </template>
 
@@ -10,14 +10,19 @@ export default {
         return {
             tableHeader: [
                 {
-                        title: 'Name',
-                        key: 'name',
-                        render: (h, params) => {
-                            return h('div', [
-                                h('strong', `${params.row.name}`)
-                            ]);
+                    title: 'Name',
+                    key: 'name',
+                    children: [
+                        {
+                            title: 'Age',
+                            key: 'age',
+                        },
+                        {
+                            title: 'Address',
+                            key: 'address'
                         }
-                    },
+                    ]
+                },
                 {
                     title: 'Age',
                     key: 'age'
@@ -32,7 +37,7 @@ export default {
                     name: 'John Brown',
                     age: 18,
                     address: 'New York No. 1 Lake Park',
-                    date: '2016-10-03',
+                    date: '2016-10-03'
                 },
                 {
                     name: 'Jim Green',

@@ -236,6 +236,19 @@
         >
             <Loading slot="demo"></Loading>
         </DocMarkdown>
+        <h2>表头分组</h2>
+        <p>
+            通过给
+            <code>tableHeader</code>设置
+            <code>children</code>属性可以使表头分组。
+        </p>
+        <DocMarkdown
+            :code="code.children"
+            jsfiddle="//jsfiddle.net/qq282126990/58skb312/"
+            github="//github.com/qq282126990/ivue.com/blob/master/src/views/components/table/Children.vue"
+        >
+            <Children slot="demo"></Children>
+        </DocMarkdown>
         <h2>API</h2>
         <h3>props</h3>
         <div class="table">
@@ -520,6 +533,12 @@
                         <td>Function</td>
                         <td>-</td>
                     </tr>
+                    <tr>
+                        <td>children</td>
+                        <td>可设置多列表头，可嵌套使用</td>
+                        <td>Array</td>
+                        <td>-</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -610,6 +629,7 @@ import IsRender from './components/table/IsRender.vue';
 import SlotScope from './components/table/SlotScope.vue';
 import Expand from './components/table/Expand.vue';
 import Loading from './components/table/Loading.vue';
+import Children from './components/table/Children.vue';
 
 export default {
     name: 'ivue-table',
@@ -631,7 +651,8 @@ export default {
         IsRender,
         SlotScope,
         Expand,
-        Loading
+        Loading,
+        Children
     }
 }
 </script>
