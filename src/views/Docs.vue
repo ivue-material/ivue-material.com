@@ -37,11 +37,13 @@
                 <router-view/>
             </keep-alive>
         </div>
+        <Footer></Footer>
     </div>
 </template>
 
 <script>
 import { mapState, mapActions } from 'vuex';
+import Footer from '@/components/Footer';
 
 export default {
     data () {
@@ -276,6 +278,9 @@ export default {
         $route () {
             window.scrollTo(0, 0)
         }
+    },
+    components:{
+        Footer
     }
 }
 </script>

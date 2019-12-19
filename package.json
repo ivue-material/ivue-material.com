@@ -7,7 +7,7 @@
         "build": "vue-cli-service build"
     },
     "dependencies": {
-        "@babel/runtime-corejs2": "^7.6.0",
+        "@babel/runtime-corejs2": "^7.7.7",
         "core-js": "^3.2.1",
         "updata": "^0.5.5",
         "vue": "^2.6.9",
