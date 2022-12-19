@@ -12,6 +12,8 @@ import 'ivue-material/dist/styles/elevation.css';
 import 'ivue-material/dist/styles/color.css';
 import 'highlight.js/styles/xcode.css';
 
+import 'material-icons/iconfont/material-icons.css';
+
 Vue.use(IvueMaterial);
 Vue.config.productionTip = false;
 
